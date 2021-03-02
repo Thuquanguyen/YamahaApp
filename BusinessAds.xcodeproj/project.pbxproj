@@ -67,12 +67,42 @@
 		186A7ED4251A5B260038C58C /* TabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A7ED3251A5B260038C58C /* TabbarModel.swift */; };
 		186A7ED5251A5B260038C58C /* TabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A7ED3251A5B260038C58C /* TabbarModel.swift */; };
 		186A7ED6251A5B260038C58C /* TabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A7ED3251A5B260038C58C /* TabbarModel.swift */; };
+		186D6C4425EEC4A500315F6A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D6C4225EEC4A200315F6A /* ProfileVC.swift */; };
+		186D6C4525EEC4A500315F6A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D6C4225EEC4A200315F6A /* ProfileVC.swift */; };
+		186D6C4625EEC4A500315F6A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D6C4225EEC4A200315F6A /* ProfileVC.swift */; };
+		186D6C4725EEC4A500315F6A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D6C4325EEC4A400315F6A /* ProfileVC.xib */; };
+		186D6C4825EEC4A500315F6A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D6C4325EEC4A400315F6A /* ProfileVC.xib */; };
+		186D6C4925EEC4A500315F6A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186D6C4325EEC4A400315F6A /* ProfileVC.xib */; };
 		18738F62252F06DF00A9D49A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18738F60252F06DF00A9D49A /* RegisterVC.swift */; };
 		18738F63252F06DF00A9D49A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18738F60252F06DF00A9D49A /* RegisterVC.swift */; };
 		18738F64252F06DF00A9D49A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18738F60252F06DF00A9D49A /* RegisterVC.swift */; };
 		18738F65252F06DF00A9D49A /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18738F61252F06DF00A9D49A /* RegisterVC.xib */; };
 		18738F66252F06DF00A9D49A /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18738F61252F06DF00A9D49A /* RegisterVC.xib */; };
 		18738F67252F06DF00A9D49A /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18738F61252F06DF00A9D49A /* RegisterVC.xib */; };
+		187E20E525EE9AFF009AD42D /* HighlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20E425EE9AFF009AD42D /* HighlightModel.swift */; };
+		187E20E625EE9AFF009AD42D /* HighlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20E425EE9AFF009AD42D /* HighlightModel.swift */; };
+		187E20E725EE9AFF009AD42D /* HighlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20E425EE9AFF009AD42D /* HighlightModel.swift */; };
+		187E20EC25EE9B12009AD42D /* NewsEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20EB25EE9B12009AD42D /* NewsEventModel.swift */; };
+		187E20ED25EE9B12009AD42D /* NewsEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20EB25EE9B12009AD42D /* NewsEventModel.swift */; };
+		187E20EE25EE9B12009AD42D /* NewsEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20EB25EE9B12009AD42D /* NewsEventModel.swift */; };
+		187E20F425EE9CCB009AD42D /* HighlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20F225EE9CCB009AD42D /* HighlightCell.swift */; };
+		187E20F525EE9CCB009AD42D /* HighlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20F225EE9CCB009AD42D /* HighlightCell.swift */; };
+		187E20F625EE9CCB009AD42D /* HighlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20F225EE9CCB009AD42D /* HighlightCell.swift */; };
+		187E20F725EE9CCB009AD42D /* HighlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E20F325EE9CCB009AD42D /* HighlightCell.xib */; };
+		187E20F825EE9CCB009AD42D /* HighlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E20F325EE9CCB009AD42D /* HighlightCell.xib */; };
+		187E20F925EE9CCB009AD42D /* HighlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E20F325EE9CCB009AD42D /* HighlightCell.xib */; };
+		187E20FF25EE9CDF009AD42D /* NewsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20FD25EE9CDF009AD42D /* NewsEventCell.swift */; };
+		187E210025EE9CDF009AD42D /* NewsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20FD25EE9CDF009AD42D /* NewsEventCell.swift */; };
+		187E210125EE9CDF009AD42D /* NewsEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E20FD25EE9CDF009AD42D /* NewsEventCell.swift */; };
+		187E210225EE9CDF009AD42D /* NewsEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E20FE25EE9CDF009AD42D /* NewsEventCell.xib */; };
+		187E210325EE9CDF009AD42D /* NewsEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E20FE25EE9CDF009AD42D /* NewsEventCell.xib */; };
+		187E210425EE9CDF009AD42D /* NewsEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E20FE25EE9CDF009AD42D /* NewsEventCell.xib */; };
+		187E210B25EEA97D009AD42D /* PopupConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E210925EEA97D009AD42D /* PopupConnectVC.swift */; };
+		187E210C25EEA97D009AD42D /* PopupConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E210925EEA97D009AD42D /* PopupConnectVC.swift */; };
+		187E210D25EEA97D009AD42D /* PopupConnectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E210925EEA97D009AD42D /* PopupConnectVC.swift */; };
+		187E210E25EEA97D009AD42D /* PopupConnectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E210A25EEA97D009AD42D /* PopupConnectVC.xib */; };
+		187E210F25EEA97D009AD42D /* PopupConnectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E210A25EEA97D009AD42D /* PopupConnectVC.xib */; };
+		187E211025EEA97D009AD42D /* PopupConnectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187E210A25EEA97D009AD42D /* PopupConnectVC.xib */; };
 		18D0895C25EBD9C8006898ED /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0895A25EBD9C8006898ED /* ProductCell.swift */; };
 		18D0895D25EBD9C8006898ED /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0895A25EBD9C8006898ED /* ProductCell.swift */; };
 		18D0895E25EBD9C8006898ED /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0895A25EBD9C8006898ED /* ProductCell.swift */; };
@@ -1541,8 +1571,18 @@
 		185DE8C125374C540080A16D /* ConnectSuccessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectSuccessVC.xib; sourceTree = "<group>"; };
 		185E265B25335FEB000A443B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		186A7ED3251A5B260038C58C /* TabbarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarModel.swift; sourceTree = "<group>"; };
+		186D6C4225EEC4A200315F6A /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		186D6C4325EEC4A400315F6A /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		18738F60252F06DF00A9D49A /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		18738F61252F06DF00A9D49A /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		187E20E425EE9AFF009AD42D /* HighlightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightModel.swift; sourceTree = "<group>"; };
+		187E20EB25EE9B12009AD42D /* NewsEventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEventModel.swift; sourceTree = "<group>"; };
+		187E20F225EE9CCB009AD42D /* HighlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightCell.swift; sourceTree = "<group>"; };
+		187E20F325EE9CCB009AD42D /* HighlightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HighlightCell.xib; sourceTree = "<group>"; };
+		187E20FD25EE9CDF009AD42D /* NewsEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEventCell.swift; sourceTree = "<group>"; };
+		187E20FE25EE9CDF009AD42D /* NewsEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsEventCell.xib; sourceTree = "<group>"; };
+		187E210925EEA97D009AD42D /* PopupConnectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupConnectVC.swift; sourceTree = "<group>"; };
+		187E210A25EEA97D009AD42D /* PopupConnectVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupConnectVC.xib; sourceTree = "<group>"; };
 		18D0895A25EBD9C8006898ED /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		18D0895B25EBD9C8006898ED /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		18EFC7042562CD3D00EED385 /* GetListAdsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetListAdsAPI.swift; sourceTree = "<group>"; };
@@ -2111,6 +2151,8 @@
 			isa = PBXGroup;
 			children = (
 				185DE82A253741C50080A16D /* ProductModel.swift */,
+				187E20E425EE9AFF009AD42D /* HighlightModel.swift */,
+				187E20EB25EE9B12009AD42D /* NewsEventModel.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -2142,11 +2184,33 @@
 			path = ConnectSuccess;
 			sourceTree = "<group>";
 		};
+		186D6C3025EEC2F800315F6A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				186D6C4225EEC4A200315F6A /* ProfileVC.swift */,
+				186D6C4325EEC4A400315F6A /* ProfileVC.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		187E210825EEA961009AD42D /* PopupConnect */ = {
+			isa = PBXGroup;
+			children = (
+				187E210925EEA97D009AD42D /* PopupConnectVC.swift */,
+				187E210A25EEA97D009AD42D /* PopupConnectVC.xib */,
+			);
+			path = PopupConnect;
+			sourceTree = "<group>";
+		};
 		18D0895625EBD980006898ED /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				18D0895A25EBD9C8006898ED /* ProductCell.swift */,
 				18D0895B25EBD9C8006898ED /* ProductCell.xib */,
+				187E20F225EE9CCB009AD42D /* HighlightCell.swift */,
+				187E20F325EE9CCB009AD42D /* HighlightCell.xib */,
+				187E20FD25EE9CDF009AD42D /* NewsEventCell.swift */,
+				187E20FE25EE9CDF009AD42D /* NewsEventCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -3250,6 +3314,7 @@
 		A5C5C819228033DF0090F3A0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				187E210825EEA961009AD42D /* PopupConnect */,
 				8CF7A3C223153B9F00BC2FC4 /* SelfSizingTableView */,
 				D1F2BA4E22C069C1008B2745 /* SearchFilterSectionHeaderView */,
 				D16C89B222B345FB00F5ED93 /* LargeTitleHeaderView */,
@@ -3436,6 +3501,7 @@
 		CA3C52CF247E0AD400DA3309 /* WelcomeAndAccount */ = {
 			isa = PBXGroup;
 			children = (
+				186D6C3025EEC2F800315F6A /* Profile */,
 				185DE8BF25374C420080A16D /* ConnectSuccess */,
 				185DE89B2537488B0080A16D /* ConnectFB */,
 				185DE88F253745E60080A16D /* SignInWithAccount */,
@@ -3994,13 +4060,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA17919A247E821D006ECB9A /* FillTextView.xib in Resources */,
+				187E210225EE9CDF009AD42D /* NewsEventCell.xib in Resources */,
 				A235DC7922807D740051F601 /* RadioView.xib in Resources */,
 				A5C5C6C7228033070090F3A0 /* LatoLatin-BlackItalic.ttf in Resources */,
+				187E20F725EE9CCB009AD42D /* HighlightCell.xib in Resources */,
 				A5C5C6CE228033070090F3A0 /* LatoLatin-Black.ttf in Resources */,
 				9E3B4F9E22AFB871007AFDB9 /* DefaultFilterFourOptionsCell.xib in Resources */,
 				97617D22248E1E3E0048B0E9 /* BaseTabBarVC.xib in Resources */,
 				9EF2948922B0E8EF00B9D56B /* DropDownCustomView.xib in Resources */,
 				D118B7AC22A9233E0053B708 /* DefaultFilterEntryButtonView.xib in Resources */,
+				186D6C4725EEC4A500315F6A /* ProfileVC.xib in Resources */,
 				A51830E42283DA7400E2E35B /* ESOptionSelectViewController.xib in Resources */,
 				A5C5C6C3228033070090F3A0 /* Lato-BoldItalic.ttf in Resources */,
 				A5C5C6B5228033070090F3A0 /* Lato-HeavyItalic.ttf in Resources */,
@@ -4082,6 +4151,7 @@
 				CA3C52F7247E48B300DA3309 /* Roboto-Medium.ttf in Resources */,
 				A5C5C6D1228033070090F3A0 /* LatoLatin-MediumItalic.ttf in Resources */,
 				A5C5C6D3228033070090F3A0 /* LatoLatin-Thin.ttf in Resources */,
+				187E210E25EEA97D009AD42D /* PopupConnectVC.xib in Resources */,
 				9E3B4FA322AFC084007AFDB9 /* RadioOptionView.xib in Resources */,
 				CA3C52FD247E48B300DA3309 /* Roboto-MediumItalic.ttf in Resources */,
 				2303399F228121CB00B26575 /* GEORGIA4.TTF in Resources */,
@@ -4136,6 +4206,8 @@
 				CA57DE3224DB95A10078852E /* Lato-Thin.ttf in Resources */,
 				CA57DE3324DB95A10078852E /* LoadingView.xib in Resources */,
 				CA57DE3824DB95A10078852E /* Lato-BlackItalic.ttf in Resources */,
+				187E211025EEA97D009AD42D /* PopupConnectVC.xib in Resources */,
+				187E210425EE9CDF009AD42D /* NewsEventCell.xib in Resources */,
 				CA57DE4024DB95A10078852E /* georgiai.ttf in Resources */,
 				CA57DE4724DB95A10078852E /* georgiab.ttf in Resources */,
 				CA57DE4824DB95A10078852E /* Georgia.ttf in Resources */,
@@ -4160,10 +4232,12 @@
 				CA57DE7E24DB95A10078852E /* LargeTitleHeaderView.xib in Resources */,
 				CA57DE8024DB95A10078852E /* DefaultFilterDropdownDetailTableViewCell.xib in Resources */,
 				185A798F2538965C00AF2440 /* ViewLoadVC.xib in Resources */,
+				187E20F925EE9CCB009AD42D /* HighlightCell.xib in Resources */,
 				CA57DE8B24DB95A10078852E /* Lato-ThinItalic.ttf in Resources */,
 				185E265E25335FEB000A443B /* GoogleService-Info.plist in Resources */,
 				CA57DE8F24DB95A10078852E /* LatoLatin-ThinItalic.ttf in Resources */,
 				CA57DE9124DB95A10078852E /* ProposalSearchView.xib in Resources */,
+				186D6C4925EEC4A500315F6A /* ProfileVC.xib in Resources */,
 				CA57DE9224DB95A10078852E /* CustomNaviBar.xib in Resources */,
 				CA57DE9324DB95A10078852E /* Lato-Heavy.ttf in Resources */,
 				CA57DE9924DB95A10078852E /* Lato-MediumItalic.ttf in Resources */,
@@ -4237,13 +4311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA17919B247E821D006ECB9A /* FillTextView.xib in Resources */,
+				187E210325EE9CDF009AD42D /* NewsEventCell.xib in Resources */,
 				97617D23248E1E3E0048B0E9 /* BaseTabBarVC.xib in Resources */,
 				D11F9FF923B1AF150003D496 /* RadioView.xib in Resources */,
+				187E20F825EE9CCB009AD42D /* HighlightCell.xib in Resources */,
 				D11F9FFD23B1AF150003D496 /* LatoLatin-BlackItalic.ttf in Resources */,
 				D11FA01A23B1AF150003D496 /* LatoLatin-Black.ttf in Resources */,
 				D11FA02623B1AF150003D496 /* DefaultFilterFourOptionsCell.xib in Resources */,
 				D11FA03B23B1AF150003D496 /* DropDownCustomView.xib in Resources */,
 				D11FA03F23B1AF150003D496 /* DefaultFilterEntryButtonView.xib in Resources */,
+				186D6C4825EEC4A500315F6A /* ProfileVC.xib in Resources */,
 				D11FA04B23B1AF150003D496 /* ESOptionSelectViewController.xib in Resources */,
 				D11FA05023B1AF150003D496 /* Lato-BoldItalic.ttf in Resources */,
 				D11FA05323B1AF150003D496 /* Lato-HeavyItalic.ttf in Resources */,
@@ -4325,6 +4402,7 @@
 				D11FA1DC23B1AF150003D496 /* LatoLatin-SemiboldItalic.ttf in Resources */,
 				D11FA1DD23B1AF150003D496 /* LatoLatin-MediumItalic.ttf in Resources */,
 				D11FA1F123B1AF150003D496 /* LatoLatin-Thin.ttf in Resources */,
+				187E210F25EEA97D009AD42D /* PopupConnectVC.xib in Resources */,
 				D11FA1F823B1AF150003D496 /* RadioOptionView.xib in Resources */,
 				CA3C52FE247E48B300DA3309 /* Roboto-MediumItalic.ttf in Resources */,
 				D11FA1FC23B1AF150003D496 /* GEORGIA4.TTF in Resources */,
@@ -4695,6 +4773,7 @@
 				D14EFB2322B0AEE1003D4FE4 /* SearchNavigationView.swift in Sources */,
 				97E35BB124824535007E7996 /* HomeModel.swift in Sources */,
 				CA2E6372247D2A9300A20D9F /* ESTabBarController.swift in Sources */,
+				187E210B25EEA97D009AD42D /* PopupConnectVC.swift in Sources */,
 				CA04422022C4AC50007CC3C4 /* ESPullToRefresh+Manager.swift in Sources */,
 				A5BA15952286BE4200EA5BDA /* CameraPhotoService.swift in Sources */,
 				A5C5C7F9228033920090F3A0 /* AutoLayoutHelper.swift in Sources */,
@@ -4721,6 +4800,7 @@
 				AB2A37CB234474AD0088E3DD /* UIReactionControl.swift in Sources */,
 				D1A93E5822A51B7000554C3E /* DefaultFilterShowResultButtonView.swift in Sources */,
 				D1A93E5322A4FEAB00554C3E /* DefaultFilterViewController.swift in Sources */,
+				187E20EC25EE9B12009AD42D /* NewsEventModel.swift in Sources */,
 				9796D46E24C83AC500DDC2D1 /* CGRect.swift in Sources */,
 				CA9E47AC246EC4DF009BB8F2 /* RegisterDeviceUser.swift in Sources */,
 				185DE8C225374C540080A16D /* ConnectSuccessVC.swift in Sources */,
@@ -4738,6 +4818,7 @@
 				A5C5C7FE228033920090F3A0 /* SystemUtils.swift in Sources */,
 				CA3F27F0248F2C1200030232 /* GradientView.swift in Sources */,
 				A5C5C7CA228033920090F3A0 /* GradientLayer.swift in Sources */,
+				187E20FF25EE9CDF009AD42D /* NewsEventCell.swift in Sources */,
 				CA04422722C4AC50007CC3C4 /* ES.swift in Sources */,
 				CA179191247E7ADE006ECB9A /* FBLoginVC.swift in Sources */,
 				A5C5C7462280336E0090F3A0 /* APIUtilities.swift in Sources */,
@@ -4786,6 +4867,7 @@
 				A5C5C7F8228033920090F3A0 /* ScreenUtils.swift in Sources */,
 				AB2A37C6234474AD0088E3DD /* ReactionFeedbackDelegate.swift in Sources */,
 				A5C5C7D7228033920090F3A0 /* URL+Extension.swift in Sources */,
+				187E20E525EE9AFF009AD42D /* HighlightModel.swift in Sources */,
 				A5C5C7412280336E0090F3A0 /* APIEnviromentProtocol.swift in Sources */,
 				CA2E6366247D2A9300A20D9F /* BubbleTabBar.swift in Sources */,
 				D1CA669C229FD2D300E53965 /* ImagePicker.swift in Sources */,
@@ -4907,6 +4989,7 @@
 				A5C5C887228033DF0090F3A0 /* LoadingView.swift in Sources */,
 				237E13062293DEBD00074753 /* FirebaseService.swift in Sources */,
 				CA3F27FA248F2C1200030232 /* DropdownTransitionDelegate.swift in Sources */,
+				187E20F425EE9CCB009AD42D /* HighlightCell.swift in Sources */,
 				A5C5C7EE228033920090F3A0 /* CustomAnimation.swift in Sources */,
 				A5C5C80F228033BA0090F3A0 /* Constants.swift in Sources */,
 				185DE8B6253749120080A16D /* ConnectFBVC.swift in Sources */,
@@ -4971,6 +5054,7 @@
 				9796D45A24C83AC500DDC2D1 /* UIView.swift in Sources */,
 				A235DC7722807D620051F601 /* RadioView.swift in Sources */,
 				D1A1DD2823D0DE8500BEDE5B /* NavigationView.swift in Sources */,
+				186D6C4425EEC4A500315F6A /* ProfileVC.swift in Sources */,
 				95A9095224A9931D00C434CD /* CaptchaGenerator.swift in Sources */,
 				A5C5C812228033BA0090F3A0 /* EnumType.swift in Sources */,
 				CA3F27EC248F2C1200030232 /* VideoCollectionViewCell.swift in Sources */,
@@ -5015,6 +5099,7 @@
 				CA57DB5024DB95A10078852E /* SharedData.swift in Sources */,
 				CA57DB5224DB95A10078852E /* Date+Extension.swift in Sources */,
 				185DE841253741C60080A16D /* ProductModel.swift in Sources */,
+				187E20F625EE9CCB009AD42D /* HighlightCell.swift in Sources */,
 				CA57DB5724DB95A10078852E /* UIImageView+Extension.swift in Sources */,
 				CA57DB5B24DB95A10078852E /* NotificationObj.swift in Sources */,
 				CA57DB5C24DB95A10078852E /* BaseTapGesture.swift in Sources */,
@@ -5084,6 +5169,7 @@
 				CA57DBE524DB95A10078852E /* ReactionFeedback.swift in Sources */,
 				CA57DBE824DB95A10078852E /* SpeechRecognitionService.swift in Sources */,
 				CA57DBEA24DB95A10078852E /* OpinionView.swift in Sources */,
+				187E20EE25EE9B12009AD42D /* NewsEventModel.swift in Sources */,
 				CA57DBEB24DB95A10078852E /* UIButton+Extension.swift in Sources */,
 				CA57DBEC24DB95A10078852E /* CALayer.swift in Sources */,
 				CA57DBEF24DB95A10078852E /* AddMoreImagesCollectionViewCell.swift in Sources */,
@@ -5179,6 +5265,7 @@
 				CA57DC9024DB95A10078852E /* CustomNibView.swift in Sources */,
 				CA57DC9124DB95A10078852E /* PassThroughWindow.swift in Sources */,
 				CA57DC9224DB95A10078852E /* UIFont+Extension.swift in Sources */,
+				187E210D25EEA97D009AD42D /* PopupConnectVC.swift in Sources */,
 				185CA178251E539F00D6939F /* WKWebView+Extension.swift in Sources */,
 				CA57DC9424DB95A10078852E /* BaseTabBarVC.swift in Sources */,
 				CA57DC9624DB95A10078852E /* ShadowView.swift in Sources */,
@@ -5200,6 +5287,7 @@
 				CA57DCB324DB95A10078852E /* BubbleTabBarController.swift in Sources */,
 				CA57DCB624DB95A10078852E /* GradientButton.swift in Sources */,
 				CA57DCBA24DB95A10078852E /* UIStackView+Extension.swift in Sources */,
+				186D6C4625EEC4A500315F6A /* ProfileVC.swift in Sources */,
 				CA57DCBB24DB95A10078852E /* APIProcessingManager.swift in Sources */,
 				CA57DCBC24DB95A10078852E /* SearchTextFieldView.swift in Sources */,
 				CA57DCC024DB95A10078852E /* BaseCustomView.swift in Sources */,
@@ -5210,6 +5298,7 @@
 				CA57DCC824DB95A10078852E /* UISlider.swift in Sources */,
 				CA57DCC924DB95A10078852E /* TableDataSource.swift in Sources */,
 				CA57DCCB24DB95A10078852E /* NotificationEnum.swift in Sources */,
+				187E210125EE9CDF009AD42D /* NewsEventCell.swift in Sources */,
 				CA57DCCE24DB95A10078852E /* APIDispatcher.swift in Sources */,
 				CA57DCCF24DB95A10078852E /* ProfileAPI.swift in Sources */,
 				CA57DCD024DB95A10078852E /* ZoomInteractionController.swift in Sources */,
@@ -5307,6 +5396,7 @@
 				CA57DD8124DB95A10078852E /* UITableViewCell+Extension.swift in Sources */,
 				CA57DD8224DB95A10078852E /* DefaultFilterEntryButtonView.swift in Sources */,
 				186A7ED6251A5B260038C58C /* TabbarModel.swift in Sources */,
+				187E20E725EE9AFF009AD42D /* HighlightModel.swift in Sources */,
 				CA57DD8524DB95A10078852E /* UIImage+Extension.swift in Sources */,
 				CA57DD8824DB95A10078852E /* SystemInfo.swift in Sources */,
 				CA57DD8924DB95A10078852E /* Label+Extension.swift in Sources */,
@@ -5462,6 +5552,7 @@
 				D11F9BBD23B1AF150003D496 /* CheckBoxGender.swift in Sources */,
 				D11F9BBF23B1AF150003D496 /* SearchNavigationView.swift in Sources */,
 				97E35BB224824535007E7996 /* HomeModel.swift in Sources */,
+				187E210C25EEA97D009AD42D /* PopupConnectVC.swift in Sources */,
 				CA2E6374247D2A9300A20D9F /* ESTabBarController.swift in Sources */,
 				D11F9BC523B1AF150003D496 /* ESPullToRefresh+Manager.swift in Sources */,
 				D11F9BCE23B1AF150003D496 /* CameraPhotoService.swift in Sources */,
@@ -5488,6 +5579,7 @@
 				185DE8C325374C540080A16D /* ConnectSuccessVC.swift in Sources */,
 				D11F9C2223B1AF150003D496 /* DefaultFilterShowResultButtonView.swift in Sources */,
 				9796D46F24C83AC500DDC2D1 /* CGRect.swift in Sources */,
+				187E20ED25EE9B12009AD42D /* NewsEventModel.swift in Sources */,
 				D11F9C2323B1AF150003D496 /* DefaultFilterViewController.swift in Sources */,
 				D11F9C2B23B1AF150003D496 /* APIExtension.swift in Sources */,
 				CA9E47AE246EC4DF009BB8F2 /* RegisterDeviceUser.swift in Sources */,
@@ -5505,6 +5597,7 @@
 				D11F9C5223B1AF150003D496 /* SystemUtils.swift in Sources */,
 				D11F9C5623B1AF150003D496 /* GradientLayer.swift in Sources */,
 				D11F9C5B23B1AF150003D496 /* ES.swift in Sources */,
+				187E210025EE9CDF009AD42D /* NewsEventCell.swift in Sources */,
 				CA3F27F1248F2C1200030232 /* GradientView.swift in Sources */,
 				CA179192247E7ADE006ECB9A /* FBLoginVC.swift in Sources */,
 				D11F9C5E23B1AF150003D496 /* APIUtilities.swift in Sources */,
@@ -5553,6 +5646,7 @@
 				D11F9CDE23B1AF150003D496 /* URL+Extension.swift in Sources */,
 				D11F9CE223B1AF150003D496 /* APIEnviromentProtocol.swift in Sources */,
 				CA2E6368247D2A9300A20D9F /* BubbleTabBar.swift in Sources */,
+				187E20E625EE9AFF009AD42D /* HighlightModel.swift in Sources */,
 				D11F9CEE23B1AF150003D496 /* ImagePicker.swift in Sources */,
 				D11F9CFC23B1AF150003D496 /* DefaultNavigationView.swift in Sources */,
 				D11F9CFD23B1AF150003D496 /* SocketConfiguration.swift in Sources */,
@@ -5674,6 +5768,7 @@
 				95A9095324A9931D00C434CD /* CaptchaGenerator.swift in Sources */,
 				D11F9E9923B1AF150003D496 /* FirebaseService.swift in Sources */,
 				CA3F27FB248F2C1200030232 /* DropdownTransitionDelegate.swift in Sources */,
+				187E20F525EE9CCB009AD42D /* HighlightCell.swift in Sources */,
 				D11F9E9D23B1AF150003D496 /* CustomAnimation.swift in Sources */,
 				97892AFB248246DB007F716F /* HomeAPI.swift in Sources */,
 				CA3F27E1248F2C1200030232 /* VideoPreviewViewController.swift in Sources */,
@@ -5738,6 +5833,7 @@
 				D11F9F6723B1AF150003D496 /* MainChildVC.swift in Sources */,
 				D11F9F6E23B1AF150003D496 /* APIError.swift in Sources */,
 				9796D45B24C83AC500DDC2D1 /* UIView.swift in Sources */,
+				186D6C4525EEC4A500315F6A /* ProfileVC.swift in Sources */,
 				D11F9F7623B1AF150003D496 /* RadioView.swift in Sources */,
 				D1A1DD2A23D0DE8500BEDE5B /* NavigationView.swift in Sources */,
 				CA3F27ED248F2C1200030232 /* VideoCollectionViewCell.swift in Sources */,

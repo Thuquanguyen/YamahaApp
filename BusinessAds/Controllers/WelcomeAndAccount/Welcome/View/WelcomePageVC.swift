@@ -12,7 +12,6 @@ class WelcomePageVC: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var imageContent: UIImageView!
-    @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var imageLine: UIImageView!
     
     // MARK: - Properties
@@ -25,7 +24,6 @@ class WelcomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageContent.image = image
-        labelTitle.text = titleSplat
         imageLine.image = UIImage(named: line)
     }
 

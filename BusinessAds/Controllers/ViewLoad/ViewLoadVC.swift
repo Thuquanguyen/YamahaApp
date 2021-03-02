@@ -13,7 +13,7 @@ class ViewLoadVC: UIViewController {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     deinit {
-        indicator.stopAnimating()
+//        indicator.stopAnimating()
     }
     
     override func viewDidLoad() {

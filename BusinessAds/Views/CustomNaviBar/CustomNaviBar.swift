@@ -10,6 +10,7 @@ import UIKit
 
 class CustomNaviBar: UIView {
  
+    @IBOutlet weak var viewContent: UIView!
     // MARK: - Outlets
     @IBOutlet weak var backButtonLeft: NSLayoutConstraint!
     @IBOutlet weak var imageCenterView: UIImageView!

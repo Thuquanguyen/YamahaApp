@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HighlightCell" customModule="BUSINESS_ADS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="212"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="212"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg_connect_fb" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-9j-blV">
+                        <rect key="frame" x="10" y="0.0" width="114" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="aW4-SV-ieq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cáp Type C - Type C 1m Mbest DS075X Trắng" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soa-HX-zKg">
+                        <rect key="frame" x="10" y="160" width="114" height="46"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Soa-HX-zKg" firstAttribute="top" secondItem="sTK-9j-blV" secondAttribute="bottom" constant="10" id="1b8-c1-FC3"/>
+                <constraint firstAttribute="trailing" secondItem="Soa-HX-zKg" secondAttribute="trailing" constant="10" id="Mis-bu-CVx"/>
+                <constraint firstItem="sTK-9j-blV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XKP-68-XVX"/>
+                <constraint firstAttribute="trailing" secondItem="sTK-9j-blV" secondAttribute="trailing" constant="10" id="YZv-PK-7F5"/>
+                <constraint firstAttribute="bottom" secondItem="Soa-HX-zKg" secondAttribute="bottom" constant="6" id="bQM-c3-YYQ"/>
+                <constraint firstItem="sTK-9j-blV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hkA-dx-nvk"/>
+                <constraint firstItem="Soa-HX-zKg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hnq-Ye-fdw"/>
+            </constraints>
+            <size key="customSize" width="134" height="212"/>
+            <connections>
+                <outlet property="imageContent" destination="sTK-9j-blV" id="G53-KY-fBc"/>
+                <outlet property="labelName" destination="Soa-HX-zKg" id="saX-xC-DYD"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="129.91071428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_bg_connect_fb" width="340" height="352"/>
+    </resources>
+</document>

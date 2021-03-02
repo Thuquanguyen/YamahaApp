@@ -20,18 +20,18 @@ class APIConfiguration {
     //MARK: - Port Base URL
     static var baseUrlPort: String {
         #if DEVELOP
-        return "https://web-app-sever-2.herokuapp.com/"
+        return "https://web-app-yamaha.herokuapp.com"
         #else
-        return "https://web-app-sever-2.herokuapp.com/"
+        return "https://web-app-yamaha.herokuapp.com"
         #endif
     }
     
     //MARK: - Main Base URL
     static var baseUrl: String {
         #if DEVELOP
-        return "https://web-app-sever-2.herokuapp.com"
+        return "https://web-app-yamaha.herokuapp.com"
         #else
-        return "https://web-app-sever-2.herokuapp.com"
+        return "https://web-app-yamaha.herokuapp.com"
         #endif
     }
     

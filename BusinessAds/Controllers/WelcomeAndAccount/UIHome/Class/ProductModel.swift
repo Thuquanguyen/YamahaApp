@@ -29,4 +29,9 @@ class ProductModel: Codable {
         self.targeting = targeting
         self.avatar = avatar
     }
+    
+    init(title: String,image: String) {
+        self.title = title
+        self.image = image
+    }
 }
