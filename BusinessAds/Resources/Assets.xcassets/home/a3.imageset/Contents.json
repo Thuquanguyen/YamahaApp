@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "brand_image_20240531_piano_640x900_e60cbf7f9a213bdb695901a97eb00e29 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "brand_image_20240531_piano_640x900_e60cbf7f9a213bdb695901a97eb00e29 1@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "brand_image_20240531_piano_640x900_e60cbf7f9a213bdb695901a97eb00e29 1@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

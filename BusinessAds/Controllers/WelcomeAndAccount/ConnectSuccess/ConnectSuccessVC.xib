@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConnectSuccessVC" customModule="BUSINESS_ADS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success connect!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwC-RK-60N">
+                    <rect key="frame" x="15" y="59" width="384" height="35.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Ads Creator &amp; Manager. Please continue to use the functions." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnE-c7-IrF">
+                    <rect key="frame" x="15" y="109.5" width="384" height="37.5"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_connect_success" translatesAutoresizingMaskIntoConstraints="NO" id="oXb-bd-G89">
+                    <rect key="frame" x="45" y="177" width="324" height="331"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_logo_signin" translatesAutoresizingMaskIntoConstraints="NO" id="8R5-sD-QPm">
+                    <rect key="frame" x="128" y="558" width="158" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="PtV-wu-9vq"/>
+                        <constraint firstAttribute="height" constant="57" id="eVC-7I-sbd"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dt-ZJ-DFc">
+                    <rect key="frame" x="128" y="645" width="158" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YNd-71-y33"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionContinue:" destination="-1" eventType="touchUpInside" id="8NT-bf-guc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vwC-RK-60N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="0Xw-Yv-g1a"/>
+                <constraint firstItem="8R5-sD-QPm" firstAttribute="top" secondItem="oXb-bd-G89" secondAttribute="bottom" constant="50" id="3Ed-O0-8aM"/>
+                <constraint firstItem="2Dt-ZJ-DFc" firstAttribute="top" secondItem="8R5-sD-QPm" secondAttribute="bottom" constant="30" id="3TK-AS-drN"/>
+                <constraint firstItem="vwC-RK-60N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="5Jq-Zz-oqU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Dt-ZJ-DFc" secondAttribute="bottom" constant="20" id="8GI-e1-TxD"/>
+                <constraint firstItem="FnE-c7-IrF" firstAttribute="leading" secondItem="vwC-RK-60N" secondAttribute="leading" id="H8s-NF-wmw"/>
+                <constraint firstItem="FnE-c7-IrF" firstAttribute="top" secondItem="vwC-RK-60N" secondAttribute="bottom" constant="15" id="J5w-2D-G9j"/>
+                <constraint firstItem="2Dt-ZJ-DFc" firstAttribute="leading" secondItem="8R5-sD-QPm" secondAttribute="leading" id="Jls-lk-Xa6"/>
+                <constraint firstItem="8R5-sD-QPm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KBC-FN-dUK"/>
+                <constraint firstItem="FnE-c7-IrF" firstAttribute="trailing" secondItem="vwC-RK-60N" secondAttribute="trailing" id="ROp-kf-ZfA"/>
+                <constraint firstItem="oXb-bd-G89" firstAttribute="leading" secondItem="FnE-c7-IrF" secondAttribute="leading" constant="30" id="TCH-gX-SUO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vwC-RK-60N" secondAttribute="trailing" constant="15" id="U8q-IH-mLj"/>
+                <constraint firstItem="2Dt-ZJ-DFc" firstAttribute="trailing" secondItem="8R5-sD-QPm" secondAttribute="trailing" id="WO4-9g-PKK"/>
+                <constraint firstItem="oXb-bd-G89" firstAttribute="top" secondItem="FnE-c7-IrF" secondAttribute="bottom" constant="30" id="YSJ-iI-hwP"/>
+                <constraint firstItem="oXb-bd-G89" firstAttribute="trailing" secondItem="FnE-c7-IrF" secondAttribute="trailing" constant="-30" id="tSP-0F-t9s"/>
+            </constraints>
+            <point key="canvasLocation" x="116" y="95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_logo_signin" width="149" height="85"/>
+        <image name="img_connect_success" width="268" height="331"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

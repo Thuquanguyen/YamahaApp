@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FBLoginVC" customModule="BUSINESS_ADS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewProgess" destination="9vK-1E-Qmk" id="uUU-Gy-zHx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vK-1E-Qmk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="KhB-CQ-hb9">
+                            <rect key="frame" x="182" y="105" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="C1d-o1-bAq"/>
+                                <constraint firstAttribute="width" secondItem="KhB-CQ-hb9" secondAttribute="height" multiplier="1:1" id="ug9-q6-dqw"/>
+                            </constraints>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In progress login... " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVu-Og-gBf">
+                            <rect key="frame" x="15" y="155" width="384" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DVu-Og-gBf" firstAttribute="leading" secondItem="9vK-1E-Qmk" secondAttribute="leading" constant="15" id="OTw-Uk-iiK"/>
+                        <constraint firstItem="KhB-CQ-hb9" firstAttribute="top" secondItem="9vK-1E-Qmk" secondAttribute="top" priority="750" constant="105" id="lvB-eH-0vI"/>
+                        <constraint firstAttribute="trailing" secondItem="DVu-Og-gBf" secondAttribute="trailing" constant="15" id="nJX-oK-vVF"/>
+                        <constraint firstItem="DVu-Og-gBf" firstAttribute="top" secondItem="KhB-CQ-hb9" secondAttribute="bottom" id="yKH-uj-IKq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KhB-CQ-hb9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerXWithinMargins" id="I4b-SP-Kg2"/>
+                <constraint firstAttribute="bottom" secondItem="9vK-1E-Qmk" secondAttribute="bottom" id="NkP-m4-OhD"/>
+                <constraint firstItem="9vK-1E-Qmk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cPa-9h-2GG"/>
+                <constraint firstItem="9vK-1E-Qmk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fRD-Ts-T4V"/>
+                <constraint firstAttribute="trailing" secondItem="9vK-1E-Qmk" secondAttribute="trailing" id="hJb-Rz-jvp"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </view>
+    </objects>
+</document>
