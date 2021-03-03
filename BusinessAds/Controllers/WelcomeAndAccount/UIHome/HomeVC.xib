@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="BUSINESS_ADS" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewHighlight" destination="Qod-F2-WQz" id="Wf6-a8-9vc"/>
+                <outlet property="collectionViewProduct" destination="63P-Dw-UU0" id="wEd-kP-DDm"/>
+                <outlet property="heightEvent" destination="FqA-9l-HCo" id="YXK-Dd-d46"/>
+                <outlet property="heightHeighlight" destination="Nev-BD-QrD" id="vir-fH-kMo"/>
+                <outlet property="heightProduct" destination="yyp-Ad-aB9" id="DXF-Hr-jq3"/>
+                <outlet property="naviBar" destination="DF2-R2-a4m" id="H4S-Ag-b7G"/>
+                <outlet property="tableViewEvent" destination="9RO-cw-oAb" id="0M4-6u-6rz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="HomeVC" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DF2-R2-a4m" customClass="CustomNaviBar" customModule="BUSINESS_ADS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="Wa0-qr-7Vo"/>
+                        <constraint firstAttribute="height" priority="750" constant="64" placeholder="YES" id="X2r-CF-yKc"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga4-Wp-f4p">
+                    <rect key="frame" x="0.0" y="64" width="414" height="832"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mku-sz-6c9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="525.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UCl-o0-dF0">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="525.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvP-bn-1z3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="29.5"/>
+                                            <fontDescription key="fontDescription" name="PingFangHK-Medium" family="PingFang HK" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="63P-Dw-UU0" customClass="BaseCollectionView" customModule="BUSINESS_ADS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="39.5" width="414" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="yyp-Ad-aB9"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LgM-bZ-ONE">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <connections>
+                                                <outlet property="dataSource" destination="-1" id="8jw-NR-sth"/>
+                                                <outlet property="delegate" destination="-1" id="QJ9-JG-7aM"/>
+                                            </connections>
+                                        </collectionView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Highlights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltf-C6-3P0">
+                                            <rect key="frame" x="0.0" y="177.5" width="414" height="29.5"/>
+                                            <fontDescription key="fontDescription" name="PingFangHK-Medium" family="PingFang HK" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qod-F2-WQz" customClass="BaseCollectionView" customModule="BUSINESS_ADS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="217" width="414" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="Nev-BD-QrD"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Fl-IY-iLd">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <connections>
+                                                <outlet property="dataSource" destination="-1" id="B05-Ou-Fa4"/>
+                                                <outlet property="delegate" destination="-1" id="PFi-FJ-ybj"/>
+                                            </connections>
+                                        </collectionView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  News &amp; Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-7V-TeT">
+                                            <rect key="frame" x="0.0" y="355" width="414" height="32.5"/>
+                                            <fontDescription key="fontDescription" name="PingFangHK-Medium" family="PingFang HK" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9RO-cw-oAb" customClass="BaseTableView" customModule="BUSINESS_ADS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="397.5" width="414" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="FqA-9l-HCo"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="dataSource" destination="-1" id="Hc2-hn-LHz"/>
+                                                <outlet property="delegate" destination="-1" id="mEG-up-rO0"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="UCl-o0-dF0" firstAttribute="top" secondItem="Mku-sz-6c9" secondAttribute="top" id="5kQ-fG-AqX"/>
+                                <constraint firstAttribute="trailing" secondItem="UCl-o0-dF0" secondAttribute="trailing" id="8hJ-IJ-bUS"/>
+                                <constraint firstItem="UCl-o0-dF0" firstAttribute="leading" secondItem="Mku-sz-6c9" secondAttribute="leading" id="LLA-yL-IsG"/>
+                                <constraint firstAttribute="bottom" secondItem="UCl-o0-dF0" secondAttribute="bottom" id="Mpc-C7-Idh"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="525.5" id="ud2-ei-p7c"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Mku-sz-6c9" secondAttribute="bottom" priority="250" id="GVc-dK-Wey"/>
+                        <constraint firstAttribute="trailing" secondItem="Mku-sz-6c9" secondAttribute="trailing" id="PB5-8X-ykE"/>
+                        <constraint firstItem="Mku-sz-6c9" firstAttribute="leading" secondItem="Ga4-Wp-f4p" secondAttribute="leading" id="Rh5-Lf-1Uj"/>
+                        <constraint firstItem="Mku-sz-6c9" firstAttribute="width" secondItem="Ga4-Wp-f4p" secondAttribute="width" id="Sfn-2v-Xsz"/>
+                        <constraint firstItem="Mku-sz-6c9" firstAttribute="top" secondItem="Ga4-Wp-f4p" secondAttribute="top" id="Z9c-gT-CJe"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DF2-R2-a4m" secondAttribute="trailing" id="4z1-sY-r4M"/>
+                <constraint firstAttribute="trailing" secondItem="Ga4-Wp-f4p" secondAttribute="trailing" id="6sm-tD-dqU"/>
+                <constraint firstItem="DF2-R2-a4m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Xt8-e3-WlU"/>
+                <constraint firstItem="DF2-R2-a4m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h3N-rh-qkB"/>
+                <constraint firstItem="Ga4-Wp-f4p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vro-9Y-eTn"/>
+                <constraint firstItem="Ga4-Wp-f4p" firstAttribute="top" secondItem="DF2-R2-a4m" secondAttribute="bottom" id="w9g-XC-yiE"/>
+                <constraint firstAttribute="bottom" secondItem="Ga4-Wp-f4p" secondAttribute="bottom" id="xlW-c4-5Tb"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "brand_image_20240531_venova_640x900_7ddc46fd2630bd1506347a06a49817b9 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "brand_image_20240531_venova_640x900_7ddc46fd2630bd1506347a06a49817b9 1@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "brand_image_20240531_venova_640x900_7ddc46fd2630bd1506347a06a49817b9 1@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

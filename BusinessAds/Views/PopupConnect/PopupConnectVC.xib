@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupConnectVC" customModule="BUSINESS_ADS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzA-Ws-hrF">
+                    <rect key="frame" x="15" y="128" width="384" height="650"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_popup" translatesAutoresizingMaskIntoConstraints="NO" id="T8x-Dt-KHF">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="400"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="400" id="1Gm-pd-hus"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter to Win" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acV-3B-b74">
+                            <rect key="frame" x="25" y="400" width="334" height="31"/>
+                            <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_line" translatesAutoresizingMaskIntoConstraints="NO" id="puM-9X-RNh">
+                            <rect key="frame" x="25" y="441" width="150" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="3wF-0k-Ccf"/>
+                                <constraint firstAttribute="width" constant="150" id="v7L-cY-H4N"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="To enter, just Create an account and connect Facebook here before March 28, 2021." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfU-5L-aY0">
+                            <rect key="frame" x="25" y="463" width="334" height="67"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyT-ee-9D3">
+                            <rect key="frame" x="45" y="570" width="294" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="IaB-Yr-fmY"/>
+                            </constraints>
+                            <state key="normal" image="bg_facebook"/>
+                            <connections>
+                                <action selector="actionConnectFB:" destination="-1" eventType="touchUpInside" id="TPc-Mv-vab"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oz1-6Y-r6D">
+                            <rect key="frame" x="354" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Oz1-6Y-r6D" secondAttribute="height" multiplier="1:1" id="Tso-j6-7yZ"/>
+                                <constraint firstAttribute="width" constant="20" id="yXy-9p-8zX"/>
+                            </constraints>
+                            <state key="normal" image="icon_close"/>
+                            <connections>
+                                <action selector="actionClose:" destination="-1" eventType="touchUpInside" id="z2n-3F-iZb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="HfU-5L-aY0" firstAttribute="trailing" secondItem="acV-3B-b74" secondAttribute="trailing" id="D7Y-oH-lNd"/>
+                        <constraint firstItem="puM-9X-RNh" firstAttribute="leading" secondItem="acV-3B-b74" secondAttribute="leading" id="FKj-Ea-UU2"/>
+                        <constraint firstAttribute="trailing" secondItem="acV-3B-b74" secondAttribute="trailing" constant="25" id="GVW-oL-iau"/>
+                        <constraint firstAttribute="trailing" secondItem="T8x-Dt-KHF" secondAttribute="trailing" id="Hvr-G9-fJF"/>
+                        <constraint firstItem="T8x-Dt-KHF" firstAttribute="leading" secondItem="rzA-Ws-hrF" secondAttribute="leading" id="IOJ-KK-TJd"/>
+                        <constraint firstItem="Oz1-6Y-r6D" firstAttribute="top" secondItem="rzA-Ws-hrF" secondAttribute="top" constant="10" id="NCZ-yL-kga"/>
+                        <constraint firstItem="T8x-Dt-KHF" firstAttribute="top" secondItem="rzA-Ws-hrF" secondAttribute="top" id="O0g-hN-qaZ"/>
+                        <constraint firstAttribute="bottom" secondItem="uyT-ee-9D3" secondAttribute="bottom" constant="30" id="TAc-uj-BAB"/>
+                        <constraint firstItem="puM-9X-RNh" firstAttribute="top" secondItem="acV-3B-b74" secondAttribute="bottom" constant="10" id="a0R-mV-PND"/>
+                        <constraint firstItem="uyT-ee-9D3" firstAttribute="top" secondItem="HfU-5L-aY0" secondAttribute="bottom" constant="40" id="cNG-md-6vp"/>
+                        <constraint firstAttribute="trailing" secondItem="Oz1-6Y-r6D" secondAttribute="trailing" constant="10" id="fgT-hB-q5v"/>
+                        <constraint firstItem="HfU-5L-aY0" firstAttribute="top" secondItem="puM-9X-RNh" secondAttribute="bottom" constant="20" id="kcQ-fA-wqK"/>
+                        <constraint firstItem="acV-3B-b74" firstAttribute="top" secondItem="T8x-Dt-KHF" secondAttribute="bottom" id="lUU-ry-13l"/>
+                        <constraint firstItem="uyT-ee-9D3" firstAttribute="leading" secondItem="HfU-5L-aY0" secondAttribute="leading" constant="20" id="lef-fR-kRn"/>
+                        <constraint firstItem="HfU-5L-aY0" firstAttribute="leading" secondItem="acV-3B-b74" secondAttribute="leading" id="tBd-aY-OjT"/>
+                        <constraint firstItem="acV-3B-b74" firstAttribute="leading" secondItem="rzA-Ws-hrF" secondAttribute="leading" constant="25" id="xkY-iK-ASv"/>
+                        <constraint firstItem="uyT-ee-9D3" firstAttribute="trailing" secondItem="HfU-5L-aY0" secondAttribute="trailing" constant="-20" id="ySL-GK-tYL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XPH-v9-TPQ"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rzA-Ws-hrF" secondAttribute="bottom" constant="40" id="33l-I8-LaY"/>
+                <constraint firstItem="rzA-Ws-hrF" firstAttribute="centerY" secondItem="XPH-v9-TPQ" secondAttribute="centerY" id="EXf-FG-VH6"/>
+                <constraint firstItem="rzA-Ws-hrF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XPH-v9-TPQ" secondAttribute="top" constant="20" id="bhv-WI-tbo"/>
+                <constraint firstAttribute="trailing" secondItem="rzA-Ws-hrF" secondAttribute="trailing" constant="15" id="jy2-93-6iO"/>
+                <constraint firstItem="rzA-Ws-hrF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="xdq-4f-bUQ"/>
+            </constraints>
+            <point key="canvasLocation" x="105.79710144927537" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_facebook" width="899" height="158"/>
+        <image name="ic_line" width="591" height="2"/>
+        <image name="icon_close" width="65" height="65"/>
+        <image name="image_popup" width="1256" height="1250"/>
+    </resources>
+</document>
