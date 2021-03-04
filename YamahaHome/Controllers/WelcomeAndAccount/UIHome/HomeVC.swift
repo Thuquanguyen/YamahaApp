@@ -176,10 +176,6 @@ While the DGX-660 had a traditional, rectangular frame, the DGX-670 has been tot
         initViewNewsEvent()
         checkFirebase()
         naviBar.rightButtonFirst.didTap = {
-            //            let defaults = UserDefaults.standard
-            //            defaults.set([], forKey: "data_tiktok")
-            //            defaults.set(false, forKey: "login_check")
-            //            defaults.synchronize()
             let vc = ProfileVC()
             self.push(vc)
         }

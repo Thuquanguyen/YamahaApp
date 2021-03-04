@@ -8,6 +8,8 @@
 
 import UIKit
 import CountryPickerView
+import Firebase
+import FirebaseDatabase
 
 class RegisterVC: UIViewController {
     @IBOutlet var headerView: UIView!
@@ -36,6 +38,7 @@ class RegisterVC: UIViewController {
     
     var year: Int = 0
     var isEmail = false,isPhone = false,isPass = false,isConfirmPass = false
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,13 +76,27 @@ class RegisterVC: UIViewController {
             defaults.set("\(self.tfLastname.text ?? "") \(self.tfFirstname.text ?? "")", forKey: "username")
             defaults.set(true, forKey: "register")
             defaults.synchronize()
-            let vc = SignInWithAccountVC()
-            self.push(vc)
+            self.checkFirebase()
         }
     }
 }
 
 extension RegisterVC{
+    
+    func checkFirebase(){
+        ref = Database.database().reference()
+        self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
+            if let status = snapshot.value as? Bool {
+                if status{
+                    AppDelegate.shared.makeHome()
+                }else{
+                    let vc = SignInWithAccountVC()
+                    self.push(vc)
+                }
+            }
+        })
+    }
+    
     private func initView(){
         tableView.tableHeaderView = headerView
         let date = Date()
@@ -95,11 +112,6 @@ extension RegisterVC{
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
-    }
-    
-    
-    func checkShowErrorBirthDay(){
-       
     }
     
     func checkEnableButton(){
