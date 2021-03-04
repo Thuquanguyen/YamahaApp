@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>874604370581-bk3teosl1234kph5lg1ddm627r6u3n96.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.874604370581-bk3teosl1234kph5lg1ddm627r6u3n96</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBCHakeHZjn_7VYn3ExCk_w8I550vE2C2Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>874604370581</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ads.yamahahome</string>
+	<key>PROJECT_ID</key>
+	<string>yamaha-home-audio</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yamaha-home-audio.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:874604370581:ios:707ab11f64c265a10fd99c</string>
+</dict>
+</plist>
