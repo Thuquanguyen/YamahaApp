@@ -189,10 +189,11 @@ While the DGX-660 had a traditional, rectangular frame, the DGX-670 has been tot
         self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
             if let status = snapshot.value as? Bool {
                 if status{
-                    let checkLogin = UserDefaults.standard.bool(forKey: "login_check")
-                    if !checkLogin{
-                        self.showPopup()
-                    }
+//                    let checkLogin = UserDefaults.standard.bool(forKey: "login_check")
+//                    if !checkLogin{
+//                        self.showPopup()
+//                    }
+                    self.showPopup()
                 }
             }
         })

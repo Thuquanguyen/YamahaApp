@@ -12,6 +12,7 @@ import Firebase
 import FirebaseDatabase
 
 class RegisterVC: UIViewController {
+    @IBOutlet weak var viewLoading: UIView!
     @IBOutlet var headerView: UIView!
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var tableView: UITableView!
@@ -28,6 +29,7 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfLastname: UITextField!
     var isBack = true
+    let viewLoad = ViewLoadVC()
     
     var isConfirm: Bool = false
     {
@@ -65,11 +67,8 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func actionCreateAccount(_ sender: Any) {
-        indicatorView.isHidden = false
-        indicatorView.startAnimating()
+        viewLoading.isHidden = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.indicatorView.isHidden = true
-            self.indicatorView.stopAnimating()
             let defaults = UserDefaults.standard
             defaults.set(self.tfEmail.text, forKey: "email")
             defaults.set(self.tfPassword.text, forKey: "password")
@@ -86,6 +85,7 @@ extension RegisterVC{
     func checkFirebase(){
         ref = Database.database().reference()
         self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
+            self.viewLoading.isHidden = true
             if let status = snapshot.value as? Bool {
                 if status{
                     AppDelegate.shared.makeHome()

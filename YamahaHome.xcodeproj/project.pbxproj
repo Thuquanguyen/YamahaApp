@@ -131,6 +131,9 @@
 		237E13172293E0C700074753 /* CheckBoxGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13142293E0C700074753 /* CheckBoxGender.swift */; };
 		23C978532285C0B800A96241 /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C978522285C0B800A96241 /* AudioService.swift */; };
 		23DCD4C52293B87C007C35BE /* FeatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD4C42293B87C007C35BE /* FeatureType.swift */; };
+		242A5E9D25F2300B00FA6425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */; };
+		242A5E9E25F2300B00FA6425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */; };
+		242A5E9F25F2300B00FA6425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */; };
 		2436E4DF2484B40200EDBDFB /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2436E4DE2484B40200EDBDFB /* DateTime.swift */; };
 		2436E4E02484B40200EDBDFB /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2436E4DE2484B40200EDBDFB /* DateTime.swift */; };
 		2436E4E32484D99100EDBDFB /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2436E4E22484D99100EDBDFB /* Alert.swift */; };
@@ -139,9 +142,6 @@
 		243B51AE2492446500D50AD2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243B51AC2492446500D50AD2 /* Date.swift */; };
 		243CDD1D24829039006A4868 /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CDD1C24829039006A4868 /* SegmentControl.swift */; };
 		243CDD1E24829039006A4868 /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243CDD1C24829039006A4868 /* SegmentControl.swift */; };
-		24467B6125F08554008B883F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24467B6025F08554008B883F /* GoogleService-Info.plist */; };
-		24467B6225F08554008B883F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24467B6025F08554008B883F /* GoogleService-Info.plist */; };
-		24467B6325F08554008B883F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24467B6025F08554008B883F /* GoogleService-Info.plist */; };
 		2485AD3824B81639005C3EAF /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2485AD3724B81639005C3EAF /* Label+Extension.swift */; };
 		2485AD3924B81639005C3EAF /* Label+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2485AD3724B81639005C3EAF /* Label+Extension.swift */; };
 		314F091522DED09F00A86A70 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314F091422DED09F00A86A70 /* Double+Extension.swift */; };
@@ -1605,11 +1605,11 @@
 		237E13142293E0C700074753 /* CheckBoxGender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxGender.swift; sourceTree = "<group>"; };
 		23C978522285C0B800A96241 /* AudioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		23DCD4C42293B87C007C35BE /* FeatureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureType.swift; sourceTree = "<group>"; };
+		242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2436E4DE2484B40200EDBDFB /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		2436E4E22484D99100EDBDFB /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		243B51AC2492446500D50AD2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		243CDD1C24829039006A4868 /* SegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
-		24467B6025F08554008B883F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2485AD3724B81639005C3EAF /* Label+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Extension.swift"; sourceTree = "<group>"; };
 		25AA5BBF082E9E2B0F96FF9D /* Pods_Business_STORE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Business_STORE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A70EB972160DA515FAC640A /* Pods-Business-PROD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Business-PROD.debug.xcconfig"; path = "Target Support Files/Pods-Business-PROD/Pods-Business-PROD.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2808,12 +2808,12 @@
 		A5C5C68A228032BD0090F3A0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */,
 				A5C5C68C228033070090F3A0 /* Font */,
 				F76FAAF0228AADCE003A6618 /* Localizable.strings */,
 				FD38B95722855AB400A1114E /* Assets.xcassets */,
 				A5C5C65F228031A30090F3A0 /* Main.storyboard */,
 				A5C5C664228031A50090F3A0 /* LaunchScreen.storyboard */,
-				24467B6025F08554008B883F /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -4084,6 +4084,7 @@
 				A5C5C886228033DF0090F3A0 /* LoadingView.xib in Resources */,
 				A5C5C6BF228033070090F3A0 /* Lato-BlackItalic.ttf in Resources */,
 				230339A3228121CB00B26575 /* georgiai.ttf in Resources */,
+				242A5E9D25F2300B00FA6425 /* GoogleService-Info.plist in Resources */,
 				D1A1DD2523D0DE8500BEDE5B /* NavigationView.xib in Resources */,
 				230339A0228121CB00B26575 /* georgiab.ttf in Resources */,
 				2303399E228121CB00B26575 /* Georgia.ttf in Resources */,
@@ -4155,7 +4156,6 @@
 				CA3C52FD247E48B300DA3309 /* Roboto-MediumItalic.ttf in Resources */,
 				2303399F228121CB00B26575 /* GEORGIA4.TTF in Resources */,
 				A5C5C6B9228033070090F3A0 /* Lato-Bold.ttf in Resources */,
-				24467B6125F08554008B883F /* GoogleService-Info.plist in Resources */,
 				A235DC75228075870051F601 /* RadioItemView.xib in Resources */,
 				A5C5C6BD228033070090F3A0 /* Lato-Regular.ttf in Resources */,
 				A5C5C6CB228033070090F3A0 /* LatoLatin-Semibold.ttf in Resources */,
@@ -4201,7 +4201,6 @@
 				CA57DE2624DB95A10078852E /* Roboto-Thin.ttf in Resources */,
 				CA57DE2924DB95A10078852E /* NavigationView.xib in Resources */,
 				CA57DE2D24DB95A10078852E /* LatoLatin-Medium.ttf in Resources */,
-				24467B6325F08554008B883F /* GoogleService-Info.plist in Resources */,
 				CA57DE2E24DB95A10078852E /* RadioCell.xib in Resources */,
 				CA57DE3024DB95A10078852E /* WelcomePageVC.xib in Resources */,
 				CA57DE3224DB95A10078852E /* Lato-Thin.ttf in Resources */,
@@ -4282,6 +4281,7 @@
 				CA57DF1824DB95A10078852E /* RadioOptionView.xib in Resources */,
 				CA57DF1924DB95A10078852E /* Roboto-MediumItalic.ttf in Resources */,
 				CA57DF2124DB95A10078852E /* GEORGIA4.TTF in Resources */,
+				242A5E9F25F2300B00FA6425 /* GoogleService-Info.plist in Resources */,
 				CA57DF2324DB95A10078852E /* Lato-Bold.ttf in Resources */,
 				CA57DF2724DB95A10078852E /* PDFViewController.xib in Resources */,
 				18D0896125EBD9C8006898ED /* ProductCell.xib in Resources */,
@@ -4335,6 +4335,7 @@
 				D11FA07723B1AF150003D496 /* LoadingView.xib in Resources */,
 				D11FA08123B1AF150003D496 /* Lato-BlackItalic.ttf in Resources */,
 				D11FA08823B1AF150003D496 /* georgiai.ttf in Resources */,
+				242A5E9E25F2300B00FA6425 /* GoogleService-Info.plist in Resources */,
 				D11FA09323B1AF150003D496 /* georgiab.ttf in Resources */,
 				D11FA09623B1AF150003D496 /* Georgia.ttf in Resources */,
 				CA3C52DE247E102300DA3309 /* WelcomeVC.xib in Resources */,
@@ -4406,7 +4407,6 @@
 				CA3C52FE247E48B300DA3309 /* Roboto-MediumItalic.ttf in Resources */,
 				D11FA1FC23B1AF150003D496 /* GEORGIA4.TTF in Resources */,
 				185DE8BA253749120080A16D /* ConnectFBVC.xib in Resources */,
-				24467B6225F08554008B883F /* GoogleService-Info.plist in Resources */,
 				D11FA20123B1AF150003D496 /* Lato-Bold.ttf in Resources */,
 				97617D29248E1E510048B0E9 /* PDFViewController.xib in Resources */,
 				D11FA20923B1AF150003D496 /* RadioItemView.xib in Resources */,
@@ -6091,7 +6091,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/BusinessAds/App/Info-STORE.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/YamahaHome/App/Info-DEV.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -6126,7 +6126,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/BusinessAds/App/Info-STORE.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/YamahaHome/App/Info-DEV.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
