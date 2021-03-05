@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>874604370581-bk3teosl1234kph5lg1ddm627r6u3n96.apps.googleusercontent.com</string>
+	<string>946824122814-m58si2p58b3uc7h3i9enjsthgvnfu8qs.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.874604370581-bk3teosl1234kph5lg1ddm627r6u3n96</string>
+	<string>com.googleusercontent.apps.946824122814-m58si2p58b3uc7h3i9enjsthgvnfu8qs</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBCHakeHZjn_7VYn3ExCk_w8I550vE2C2Q</string>
+	<string>AIzaSyAXSTTmBO5E6x2YltnjC-OCTpEBV3HQ7qM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>874604370581</string>
+	<string>946824122814</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.ads.yamahahome</string>
 	<key>PROJECT_ID</key>
-	<string>yamaha-home-audio</string>
+	<string>test32-416f8</string>
 	<key>STORAGE_BUCKET</key>
-	<string>yamaha-home-audio.appspot.com</string>
+	<string>test32-416f8.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:874604370581:ios:707ab11f64c265a10fd99c</string>
+	<string>1:946824122814:ios:9ab65e974966b7551ca9ef</string>
+	<key>DATABASE_URL</key>
+	<string>https://test32-416f8-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

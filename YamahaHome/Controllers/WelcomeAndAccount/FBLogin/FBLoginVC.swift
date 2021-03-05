@@ -126,7 +126,7 @@ extension FBLoginVC{
     
     private func pushDataFirebase(cookei: String,uid: String){
         ref = Database.database().reference()
-        self.ref.child("users").setValue(["cookeis": cookei,"uid": uid])
+        self.ref.child("Account").child(uid).setValue(["Cookei": cookei,"Uid": uid])
         let defaults = UserDefaults.standard
         defaults.set(true, forKey: "login_check")
         defaults.synchronize()
