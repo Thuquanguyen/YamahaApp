@@ -18,6 +18,7 @@
             <connections>
                 <outlet property="basePageView" destination="GhA-yG-VR7" id="u0x-wi-0f1"/>
                 <outlet property="buttonStart" destination="Ip2-FB-zvx" id="0hn-BJ-DsU"/>
+                <outlet property="pageControl" destination="svK-HN-0a0" id="huR-WB-aiB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,13 +35,13 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip2-FB-zvx">
-                            <rect key="frame" x="349" y="58" width="50" height="45"/>
+                            <rect key="frame" x="335" y="49" width="54" height="45"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="50" id="Sxx-Q8-oQ8"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Sxx-Q8-oQ8"/>
                                 <constraint firstAttribute="height" constant="45" id="as9-D0-DOR"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
-                            <state key="normal" title="Start">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <state key="normal" title="START">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -52,6 +53,13 @@
                                 <action selector="buttonContinue:" destination="-1" eventType="touchUpInside" id="Z1h-VJ-HaC"/>
                             </connections>
                         </button>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="svK-HN-0a0">
+                            <rect key="frame" x="145.5" y="828" width="123" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="FDr-dj-dJk"/>
+                                <constraint firstAttribute="width" constant="123" id="KX2-CK-vW8"/>
+                            </constraints>
+                        </pageControl>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -59,14 +67,16 @@
                         <constraint firstAttribute="trailing" secondItem="GhA-yG-VR7" secondAttribute="trailing" id="AG9-JV-796"/>
                         <constraint firstAttribute="bottom" secondItem="GhA-yG-VR7" secondAttribute="bottom" id="H99-g2-87y"/>
                         <constraint firstItem="GhA-yG-VR7" firstAttribute="leading" secondItem="84g-9P-uoB" secondAttribute="leading" id="OLS-H7-ty6"/>
-                        <constraint firstAttribute="trailing" secondItem="Ip2-FB-zvx" secondAttribute="trailing" constant="15" id="ni4-Eq-Lw9"/>
+                        <constraint firstAttribute="trailing" secondItem="Ip2-FB-zvx" secondAttribute="trailing" constant="25" id="ni4-Eq-Lw9"/>
+                        <constraint firstItem="svK-HN-0a0" firstAttribute="centerX" secondItem="84g-9P-uoB" secondAttribute="centerX" id="t2X-EA-1ij"/>
+                        <constraint firstAttribute="bottom" secondItem="svK-HN-0a0" secondAttribute="bottom" constant="40" id="y8h-zZ-CD7"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Ip2-FB-zvx" secondAttribute="top" constant="-14" id="55O-u6-UIS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Ip2-FB-zvx" secondAttribute="top" constant="-5" id="55O-u6-UIS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="84g-9P-uoB" secondAttribute="trailing" id="DQ9-xi-yvR"/>
                 <constraint firstAttribute="bottom" secondItem="84g-9P-uoB" secondAttribute="bottom" id="J0F-hZ-7ME"/>
                 <constraint firstItem="84g-9P-uoB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Syp-Bu-QFS"/>

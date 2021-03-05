@@ -13,11 +13,11 @@ class WelcomeVC: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var buttonStart: UIButton!
     @IBOutlet weak var basePageView: UIView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     // MARK: - Properties
     var page: UIPageViewController!
     var imageNames: [String] = ["a1","a2","a3"]
-    var imageLines: [String] = ["icon_line_1","icon_line_2","icon_line_3"]
     var titleNames:[String] = ["Discover\nyour Business","Optimization\nyour system","Increase sales\nin the most optimal way"]
     var indexPage = 0
     static var timer: Timer?
@@ -81,7 +81,7 @@ extension WelcomeVC: UIPageViewControllerDelegate, UIPageViewControllerDataSourc
         if imageNames.count > index {
             vc.image = UIImage(imageNames[index])
             vc.titleSplat = titleNames[index]
-            vc.line = imageLines[index]
+            self.pageControl.currentPage = index
         }
         return vc
     }
