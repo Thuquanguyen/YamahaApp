@@ -45,8 +45,8 @@ extension ProfileVC{
     }
     
     private func logout(){
+        UserDefaults.standard.setValue(nil, forKey: "username")
         UserDefaults.standard.setValue(nil, forKey: "email")
-        UserDefaults.standard.setValue(nil, forKey: "name")
         let defaults = UserDefaults.standard
         defaults.set([], forKey: "data_tiktok")
         defaults.set(false, forKey: "login_check")

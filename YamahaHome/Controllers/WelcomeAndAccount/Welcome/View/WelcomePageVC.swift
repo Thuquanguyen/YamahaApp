@@ -12,7 +12,6 @@ class WelcomePageVC: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var imageContent: UIImageView!
-    @IBOutlet weak var imageLine: UIImageView!
     
     // MARK: - Properties
     var index: Int = 0
@@ -24,7 +23,6 @@ class WelcomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageContent.image = image
-        imageLine.image = UIImage(named: line)
     }
 
 }
