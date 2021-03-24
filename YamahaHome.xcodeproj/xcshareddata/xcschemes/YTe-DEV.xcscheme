@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A5C5C657228031A30090F3A0"
-               BuildableName = "BUSINESS ADS.app"
+               BuildableName = "YH Make Waves.app"
                BlueprintName = "YamahaHome-DEV"
                ReferencedContainer = "container:YamahaHome.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5C5C657228031A30090F3A0"
-            BuildableName = "BUSINESS ADS.app"
+            BuildableName = "YH Make Waves.app"
             BlueprintName = "YamahaHome-DEV"
             ReferencedContainer = "container:YamahaHome.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A5C5C657228031A30090F3A0"
-            BuildableName = "BUSINESS ADS.app"
+            BuildableName = "YH Make Waves.app"
             BlueprintName = "YamahaHome-DEV"
             ReferencedContainer = "container:YamahaHome.xcodeproj">
          </BuildableReference>

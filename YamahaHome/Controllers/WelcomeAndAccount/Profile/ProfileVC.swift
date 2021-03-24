@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 import SDWebImage
 
 class ProfileVC: UIViewController {
@@ -51,7 +50,6 @@ extension ProfileVC{
         defaults.set([], forKey: "data_tiktok")
         defaults.set(false, forKey: "login_check")
         defaults.synchronize()
-        let vc = SignInWithAccountVC()
-        self.push(vc)
+        AppDelegate.shared.makeLogin()
     }
 }

@@ -284,7 +284,6 @@ class Utils {
         SharedData.avatarUser = nil
         SharedData.setUserData(json: nil)
         SharedData.userID = nil
-        SharedData.accountState = nil
         RealmService.removeFile()
 //        NotificationCenter.default.post(name: NotiCenterName.logoutUser, object: nil)
     }

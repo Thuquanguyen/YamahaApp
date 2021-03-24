@@ -15,9 +15,6 @@ def shared_pods
 
   pod 'SDWebImage', '~> 5.0.1'
   pod 'Cache'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
   pod 'Firebase/Database'
 
   # Used for segmented scroll view
@@ -37,10 +34,6 @@ def shared_pods
   
   # Used for Push Notification
   pod 'Fabric', '~> 1.10.2'
-  pod 'Crashlytics', '~> 3.14.0'
-  pod 'Firebase/Core'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Messaging'
 
   # Use Photo Slider
   pod 'SKPhotoBrowser'
@@ -57,21 +50,21 @@ end
 
 
 # DEV
-target 'Business-DEV' do
+target 'YamahaHome-DEV' do
 
  shared_pods
 
 end
 
 # PROD
-target 'Business-PROD' do
+target 'YamahaHome-PROD' do
 
  shared_pods
 
 end
 
 # STORE
-target 'Business-STORE' do
+target 'YamahaHome-STORE' do
 
  shared_pods
 

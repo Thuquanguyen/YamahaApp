@@ -9,8 +9,6 @@
 import UIKit
 import IQKeyboardManagerSwift
 import Firebase
-import FirebaseMessaging
-import FirebaseInstanceID
 import AVFoundation
 import PushKit
 import RealmSwift

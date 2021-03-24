@@ -279,18 +279,6 @@ class SharedData {
         }
     }
     
-    //Account state
-    class var accountState: AccountState? {
-        get {
-            if let state = (UserDefaults.standard.value(forKey: "AccountState") as? String) {
-                return AccountState(rawValue: state)
-            }
-            return nil
-        }
-        set(value) {
-            UserDefaults.standard.set(value?.rawValue, forKey: "AccountState")
-        }
-    }
     
     class var voipDeviceToken: String? {
         get {

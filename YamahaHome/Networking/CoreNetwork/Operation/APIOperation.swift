@@ -222,12 +222,4 @@ class APIOperation<T: APIResponseProtocol>: APIOperationProtocol {
             VCService.present(controller: alert)
         }
     }
-    
-    func refreshToken(completion: @escaping((_ success: Bool) -> Void)) {
-        RefreshTokenAPI().execute(target: nil, success: { (response) in
-            completion(response.isSuccess)
-        }) { (error) in
-            completion(false)
-        }
-    }
 }

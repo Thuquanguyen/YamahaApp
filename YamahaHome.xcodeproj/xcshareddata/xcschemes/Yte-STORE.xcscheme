@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CA57DB1A24DB95A10078852E"
-               BuildableName = "Yamaha Home Audio .app"
+               BuildableName = "YH Make Waves.app"
                BlueprintName = "YamahaHome-STORE"
                ReferencedContainer = "container:YamahaHome.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA57DB1A24DB95A10078852E"
-            BuildableName = "Yamaha Home Audio .app"
+            BuildableName = "YH Make Waves.app"
             BlueprintName = "YamahaHome-STORE"
             ReferencedContainer = "container:YamahaHome.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CA57DB1A24DB95A10078852E"
-            BuildableName = "Yamaha Home Audio .app"
+            BuildableName = "YH Make Waves.app"
             BlueprintName = "YamahaHome-STORE"
             ReferencedContainer = "container:YamahaHome.xcodeproj">
          </BuildableReference>
