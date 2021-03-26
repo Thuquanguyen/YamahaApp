@@ -7,41 +7,34 @@
 //
 
 import UIKit
-import DropDown
 import Photos
 
 class AddAdsVC: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
     
-    @IBOutlet weak var btnDropDown: UIButton!
     @IBOutlet weak var tfWebsite: UITextField!
-    @IBOutlet weak var tfBudget: UITextField!
     @IBOutlet weak var imageUpload: UIImageView!
     @IBOutlet weak var viewUpload: UIView!
-    @IBOutlet weak var viewTargeting: UIView!
     @IBOutlet weak var btnSend: UIButton!
-    @IBOutlet weak var labelTargeting: UILabel!
+    @IBOutlet weak var tvDesciption: UITextView!
     
-    var dropDown = DropDown()
-    var dataDrop: [String] = ["Children","Engineer","Doctor","Constructor","Singer","Programer","Teacher"]
     var isWebsite: Bool = true
     var isApp: Bool = false
     var imagePicker = UIImagePickerController()
     var urlAvatar: String = ""
-    var listData = [ProductModel]()
+    var listData = [TiktokModel]()
     var avatar: UIImage = UIImage(named: "") ?? UIImage()
     var updateData:(() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        labelTargeting.text = dataDrop[0]
         imagePicker.delegate = self
         getData()
     }
     
     private func getData(){
         if let placeData = UserDefaults.standard.data(forKey: "data_tiktok"){
-            let placeArray = try! JSONDecoder().decode([ProductModel].self, from: placeData)
+            let placeArray = try! JSONDecoder().decode([TiktokModel].self, from: placeData)
             self.listData = placeArray
         }
     }
@@ -57,17 +50,7 @@ class AddAdsVC: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         isWebsite = false
         isApp = true
     }
-    
-    @IBAction func actionTargeting(_ sender: Any) {
-        dropDown.dataSource = dataDrop
-        dropDown.anchorView = btnDropDown
-        dropDown.bottomOffset = CGPoint(x: 0, y: btnDropDown.frame.size.height)
-        dropDown.selectionAction = { [weak self] (index: Int, item: String) in
-            self?.labelTargeting.text = item
-        }
-        dropDown.show()
-    }
-    
+
     @IBAction func actionUpload(_ sender: Any) {
         PHPhotoLibrary.requestAuthorization { (status) in
             DispatchQueue.main.async {
@@ -84,7 +67,7 @@ class AddAdsVC: UIViewController, UINavigationControllerDelegate, UIImagePickerC
         if checkSubmit(){
             let defaults = UserDefaults.standard
             let imgData = avatar.jpegData(compressionQuality: 1)
-            let model = ProductModel(id: listData.count,type: isWebsite ? "Website visits" : "App installs", title: tfWebsite.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "" , budget: Double(tfBudget.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "0") ?? 0, targeting: labelTargeting.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "", avatar: imgData ?? Data())
+            let model = TiktokModel(id: listData.count, title: tfWebsite.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "" , content: tvDesciption.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "", avatar: imgData ?? Data())
             listData.append(model)
             let placesData = try! JSONEncoder().encode(listData)
             defaults.set(placesData, forKey: "data_tiktok")
@@ -117,7 +100,6 @@ class AddAdsVC: UIViewController, UINavigationControllerDelegate, UIImagePickerC
 extension AddAdsVC{
     private func setupUI(){
         setupBorderView(viewBorder: viewUpload)
-        setupBorderView(viewBorder: viewTargeting)
         btnSend.layer.cornerRadius = 10
         imageUpload.layer.cornerRadius = 5
     }
@@ -133,7 +115,7 @@ extension AddAdsVC{
             return false
         }
         
-        if tfBudget.text?.isEmpty ?? false{
+        if tvDesciption.text?.isEmpty ?? false{
             return false
         }
         

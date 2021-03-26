@@ -12,12 +12,16 @@ import FirebaseDatabase
 
 class HomeVC: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var collectionViewProduct: BaseCollectionView!
     @IBOutlet weak var collectionViewHighlight: BaseCollectionView!
     @IBOutlet weak var tableViewEvent: BaseTableView!
     @IBOutlet weak var heightProduct: NSLayoutConstraint!
     @IBOutlet weak var heightHeighlight: NSLayoutConstraint!
     @IBOutlet weak var heightEvent: NSLayoutConstraint!
+    @IBOutlet weak var viewError: UIView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var viewAdd: UIView!
     
     @IBOutlet weak var naviBar: CustomNaviBar!
     {
@@ -25,8 +29,8 @@ class HomeVC: UIViewController {
             naviBar.viewContent.backgroundColor = .white
             naviBar.buttonBack.isHidden = true
             naviBar.imageCenterView.isHidden = false
-            naviBar.rightButtonFirst.isHidden = false
-            naviBar.rightButtonFirst.iconImage = UIImage("icon_user")
+//            naviBar.rightButtonFirst.isHidden = false
+//            naviBar.rightButtonFirst.iconImage = UIImage("icon_user")
             
         }
     }
@@ -167,6 +171,7 @@ While the DGX-660 had a traditional, rectangular frame, the DGX-670 has been tot
     
     var ref: DatabaseReference!
     let popup = PopupConnectVC()
+    var listData = [TiktokModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -175,13 +180,15 @@ While the DGX-660 had a traditional, rectangular frame, the DGX-670 has been tot
         initViewHighlight()
         initViewNewsEvent()
         checkFirebase()
-        naviBar.rightButtonFirst.didTap = {
-            let vc = ProfileVC()
-            self.push(vc)
-        }
+//        naviBar.rightButtonFirst.didTap = {
+//            let vc = ProfileVC()
+//            self.push(vc)
+//        }
         naviBar.buttonBack.didTap = {
             self.pop()
         }
+        tableView.register(UINib(nibName: "TiktokItemCell", bundle: nil), forCellReuseIdentifier: "TiktokItemCell")
+        getData()
     }
     
     func checkFirebase(){
@@ -223,9 +230,46 @@ While the DGX-660 had a traditional, rectangular frame, the DGX-670 has been tot
             }
         }
     }
+    
+    @IBAction func actionAdd(_ sender: Any) {
+        let vc = AddAdsVC()
+        vc.updateData = {
+            self.listData.removeAll()
+            self.getData()
+            self.tableView.reloadData()
+            self.viewAdd.isHidden = false
+            self.scrollView.isHidden = true
+        }
+        self.push(vc)
+    }
+    
+    @IBAction func actionShowScrollView(_ sender: Any) {
+        self.viewAdd.isHidden = true
+        self.scrollView.isHidden = false
+    }
+    
+    @IBAction func actionAdded(_ sender: Any) {
+        self.viewAdd.isHidden = false
+        self.scrollView.isHidden = true
+    }
+    
 }
 
 extension HomeVC {
+    private func getData(){
+        if let placeData = UserDefaults.standard.data(forKey: "data_tiktok"){
+            let placeArray = try! JSONDecoder().decode([TiktokModel].self, from: placeData)
+            self.listData = placeArray
+            if self.listData.count == 0 {
+                viewError.isHidden = false
+            }else{
+                viewError.isHidden = true
+            }
+        }else{
+            viewError.isHidden = false
+        }
+    }
+    
     private func initViewProduct(){
         collectionViewProduct.didChangeContentSize = { [weak self] contentSize in
             self?.heightProduct.constant = contentSize.height + 10
@@ -282,5 +326,26 @@ extension HomeVC {
         }
         tableViewEvent.setup(source: dataSourcNewsEvent, registerNibCells: [NewsEventCell.self])
         dataSourcNewsEvent.setupData(listEvents)
+    }
+}
+
+extension HomeVC: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TiktokItemCell", for: indexPath) as! TiktokItemCell
+        cell.selectionStyle = .none
+        if listData.count > indexPath.row{
+            cell.initData(tiktok: listData[indexPath.row])
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = TiktokDetailVC()
+        vc.tiktok = listData[indexPath.row]
+        self.push(vc)
     }
 }

@@ -135,8 +135,7 @@ extension AppDelegate {
     }
     
     func makeLogin(){
-        let checkLogin = UserDefaults.standard.bool(forKey: "register")
-        let vc = UINavigationController(rootViewController: checkLogin ? SignInWithAccountVC() : RegisterVC())
+        let vc = UINavigationController(rootViewController: HomeVC())
         vc.navigationBar.isHidden = true
         window?.rootViewController = vc
         window?.makeKeyAndVisible()

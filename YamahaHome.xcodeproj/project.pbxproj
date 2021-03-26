@@ -130,6 +130,21 @@
 		237E13162293E0C700074753 /* PassThroughWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13132293E0C700074753 /* PassThroughWindow.swift */; };
 		237E13172293E0C700074753 /* CheckBoxGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13142293E0C700074753 /* CheckBoxGender.swift */; };
 		23DCD4C52293B87C007C35BE /* FeatureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD4C42293B87C007C35BE /* FeatureType.swift */; };
+		2424F6EA260B2938003B2543 /* TiktokModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F6E9260B2938003B2543 /* TiktokModel.swift */; };
+		2424F6EB260B2938003B2543 /* TiktokModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F6E9260B2938003B2543 /* TiktokModel.swift */; };
+		2424F6EC260B2938003B2543 /* TiktokModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F6E9260B2938003B2543 /* TiktokModel.swift */; };
+		2424F6F2260B294E003B2543 /* TiktokItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2424F6F0260B294E003B2543 /* TiktokItemCell.xib */; };
+		2424F6F3260B294E003B2543 /* TiktokItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2424F6F0260B294E003B2543 /* TiktokItemCell.xib */; };
+		2424F6F4260B294E003B2543 /* TiktokItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2424F6F0260B294E003B2543 /* TiktokItemCell.xib */; };
+		2424F6F5260B294E003B2543 /* TiktokItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F6F1260B294E003B2543 /* TiktokItemCell.swift */; };
+		2424F6F6260B294E003B2543 /* TiktokItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F6F1260B294E003B2543 /* TiktokItemCell.swift */; };
+		2424F6F7260B294E003B2543 /* TiktokItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F6F1260B294E003B2543 /* TiktokItemCell.swift */; };
+		2424F70C260B2FC6003B2543 /* TiktokDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F70A260B2FC5003B2543 /* TiktokDetailVC.swift */; };
+		2424F70D260B2FC6003B2543 /* TiktokDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F70A260B2FC5003B2543 /* TiktokDetailVC.swift */; };
+		2424F70E260B2FC6003B2543 /* TiktokDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2424F70A260B2FC5003B2543 /* TiktokDetailVC.swift */; };
+		2424F70F260B2FC6003B2543 /* TiktokDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2424F70B260B2FC5003B2543 /* TiktokDetailVC.xib */; };
+		2424F710260B2FC6003B2543 /* TiktokDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2424F70B260B2FC5003B2543 /* TiktokDetailVC.xib */; };
+		2424F711260B2FC6003B2543 /* TiktokDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2424F70B260B2FC5003B2543 /* TiktokDetailVC.xib */; };
 		242A5E9D25F2300B00FA6425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */; };
 		242A5E9E25F2300B00FA6425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */; };
 		242A5E9F25F2300B00FA6425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */; };
@@ -1536,6 +1551,11 @@
 		237E13132293E0C700074753 /* PassThroughWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassThroughWindow.swift; sourceTree = "<group>"; };
 		237E13142293E0C700074753 /* CheckBoxGender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxGender.swift; sourceTree = "<group>"; };
 		23DCD4C42293B87C007C35BE /* FeatureType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureType.swift; sourceTree = "<group>"; };
+		2424F6E9260B2938003B2543 /* TiktokModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiktokModel.swift; sourceTree = "<group>"; };
+		2424F6F0260B294E003B2543 /* TiktokItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiktokItemCell.xib; sourceTree = "<group>"; };
+		2424F6F1260B294E003B2543 /* TiktokItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiktokItemCell.swift; sourceTree = "<group>"; };
+		2424F70A260B2FC5003B2543 /* TiktokDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiktokDetailVC.swift; sourceTree = "<group>"; };
+		2424F70B260B2FC5003B2543 /* TiktokDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TiktokDetailVC.xib; sourceTree = "<group>"; };
 		242A5E9C25F2300B00FA6425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2436E4DE2484B40200EDBDFB /* DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
 		2436E4E22484D99100EDBDFB /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -2042,6 +2062,7 @@
 		185DE820253741C50080A16D /* UIHome */ = {
 			isa = PBXGroup;
 			children = (
+				2424F6FB260B2F4E003B2543 /* TiktokDetailVC */,
 				18D0895625EBD980006898ED /* Cell */,
 				185A7978253890BD00AF2440 /* Detail */,
 				185DE821253741C50080A16D /* AddAds */,
@@ -2064,6 +2085,7 @@
 		185DE828253741C50080A16D /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2424F6E9260B2938003B2543 /* TiktokModel.swift */,
 				185DE82A253741C50080A16D /* ProductModel.swift */,
 				187E20E425EE9AFF009AD42D /* HighlightModel.swift */,
 				187E20EB25EE9B12009AD42D /* NewsEventModel.swift */,
@@ -2119,6 +2141,8 @@
 		18D0895625EBD980006898ED /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2424F6F1260B294E003B2543 /* TiktokItemCell.swift */,
+				2424F6F0260B294E003B2543 /* TiktokItemCell.xib */,
 				18D0895A25EBD9C8006898ED /* ProductCell.swift */,
 				18D0895B25EBD9C8006898ED /* ProductCell.xib */,
 				187E20F225EE9CCB009AD42D /* HighlightCell.swift */,
@@ -2191,6 +2215,15 @@
 				23DCD4C42293B87C007C35BE /* FeatureType.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		2424F6FB260B2F4E003B2543 /* TiktokDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				2424F70A260B2FC5003B2543 /* TiktokDetailVC.swift */,
+				2424F70B260B2FC5003B2543 /* TiktokDetailVC.xib */,
+			);
+			path = TiktokDetailVC;
 			sourceTree = "<group>";
 		};
 		243B51AB2492444E00D50AD2 /* Date */ = {
@@ -3929,6 +3962,7 @@
 				D1BD6C9022AE33DC00F0E064 /* NewsNavigationView.xib in Resources */,
 				A5C5C6BB228033070090F3A0 /* Lato-SemiboldItalic.ttf in Resources */,
 				230339A5228121CB00B26575 /* georgia italic.ttf in Resources */,
+				2424F70F260B2FC6003B2543 /* TiktokDetailVC.xib in Resources */,
 				FD38B95822855AB400A1114E /* Assets.xcassets in Resources */,
 				2303399D228121CB00B26575 /* georgia bold.ttf in Resources */,
 				D16C89B622B3463D00F5ED93 /* LargeTitleHeaderView.xib in Resources */,
@@ -3953,6 +3987,7 @@
 				A51830CF2283CFC600E2E35B /* FillerPeople.xib in Resources */,
 				2303399C228121CB00B26575 /* Georgia Regular font.ttf in Resources */,
 				185DE82D253741C50080A16D /* AddAdsVC.xib in Resources */,
+				2424F6F2260B294E003B2543 /* TiktokItemCell.xib in Resources */,
 				185A798D2538965C00AF2440 /* ViewLoadVC.xib in Resources */,
 				CA3C52F9247E48B300DA3309 /* Roboto-Light.ttf in Resources */,
 				A5C5C6C9228033070090F3A0 /* LatoLatin-HairlineItalic.ttf in Resources */,
@@ -4016,6 +4051,7 @@
 				CA57DE0B24DB95A10078852E /* LatoLatin-Black.ttf in Resources */,
 				CA57DE0D24DB95A10078852E /* DefaultFilterFourOptionsCell.xib in Resources */,
 				CA57DE1124DB95A10078852E /* DropDownCustomView.xib in Resources */,
+				2424F711260B2FC6003B2543 /* TiktokDetailVC.xib in Resources */,
 				CA57DE1624DB95A10078852E /* (null) in Resources */,
 				CA57DE1A24DB95A10078852E /* DefaultFilterEntryButtonView.xib in Resources */,
 				CA57DE1C24DB95A10078852E /* ESOptionSelectViewController.xib in Resources */,
@@ -4033,6 +4069,7 @@
 				CA57DE3824DB95A10078852E /* Lato-BlackItalic.ttf in Resources */,
 				187E211025EEA97D009AD42D /* PopupConnectVC.xib in Resources */,
 				187E210425EE9CDF009AD42D /* NewsEventCell.xib in Resources */,
+				2424F6F4260B294E003B2543 /* TiktokItemCell.xib in Resources */,
 				CA57DE4024DB95A10078852E /* georgiai.ttf in Resources */,
 				CA57DE4724DB95A10078852E /* georgiab.ttf in Resources */,
 				CA57DE4824DB95A10078852E /* Georgia.ttf in Resources */,
@@ -4180,6 +4217,7 @@
 				D11FA0F523B1AF150003D496 /* georgia italic.ttf in Resources */,
 				185DE834253741C60080A16D /* HomeVC.xib in Resources */,
 				D11FA0FB23B1AF150003D496 /* Assets.xcassets in Resources */,
+				2424F710260B2FC6003B2543 /* TiktokDetailVC.xib in Resources */,
 				D11FA0FC23B1AF150003D496 /* georgia bold.ttf in Resources */,
 				D11FA0FD23B1AF150003D496 /* LargeTitleHeaderView.xib in Resources */,
 				D11FA10623B1AF150003D496 /* DefaultFilterDropdownDetailTableViewCell.xib in Resources */,
@@ -4204,6 +4242,7 @@
 				D11FA14A23B1AF150003D496 /* Georgia Regular font.ttf in Resources */,
 				CA3C52FA247E48B300DA3309 /* Roboto-Light.ttf in Resources */,
 				185DE82E253741C50080A16D /* AddAdsVC.xib in Resources */,
+				2424F6F3260B294E003B2543 /* TiktokItemCell.xib in Resources */,
 				185A798E2538965C00AF2440 /* ViewLoadVC.xib in Resources */,
 				D11FA15C23B1AF150003D496 /* LatoLatin-HairlineItalic.ttf in Resources */,
 				CA179194247E7ADE006ECB9A /* FBLoginVC.xib in Resources */,
@@ -4559,6 +4598,7 @@
 				9796D44624C83AC500DDC2D1 /* BlurView.swift in Sources */,
 				A51830A62283C81600E2E35B /* PickerViewer.swift in Sources */,
 				D1AA10B622923CF600C383E0 /* TextBoxCommentView.swift in Sources */,
+				2424F6F5260B294E003B2543 /* TiktokItemCell.swift in Sources */,
 				8C778F5423166B0B009A1969 /* Collection+Extension.swift in Sources */,
 				A5C5C7372280336E0090F3A0 /* SocketService.swift in Sources */,
 				9796D47224C83AC500DDC2D1 /* UIScreen.swift in Sources */,
@@ -4747,6 +4787,7 @@
 				A5C5C7EA228033920090F3A0 /* UITableView+Extension.swift in Sources */,
 				A5C5C73E2280336E0090F3A0 /* APIRequest.swift in Sources */,
 				CA3F27BC248F2C1200030232 /* ImagePickerController+Assets.swift in Sources */,
+				2424F70C260B2FC6003B2543 /* TiktokDetailVC.swift in Sources */,
 				A5C5C7392280336E0090F3A0 /* APIOperationProtocol.swift in Sources */,
 				AB2A37C4234474AD0088E3DD /* ReactionButtonConfig.swift in Sources */,
 				A5C5C7422280336E0090F3A0 /* APIUIIndicator.swift in Sources */,
@@ -4820,6 +4861,7 @@
 				D1014B9422A1004A00B60E77 /* ImagesPageView.swift in Sources */,
 				A5C5C7362280336E0090F3A0 /* SocketIOService.swift in Sources */,
 				A5C5C7FA228033920090F3A0 /* GeneralUtils.swift in Sources */,
+				2424F6EA260B2938003B2543 /* TiktokModel.swift in Sources */,
 				CA3F27E4248F2C1200030232 /* CameraCollectionViewCell.swift in Sources */,
 				CA3F2800248F2C1200030232 /* ZoomTransitionDelegate.swift in Sources */,
 				CA2E6375247D2A9300A20D9F /* ESTabBarItemContentView.swift in Sources */,
@@ -4913,6 +4955,7 @@
 				CA57DB6724DB95A10078852E /* ImageFadeInHandler.swift in Sources */,
 				CA57DB6924DB95A10078852E /* AlertView.swift in Sources */,
 				CA57DB6A24DB95A10078852E /* CameraPreviewView.swift in Sources */,
+				2424F6EC260B2938003B2543 /* TiktokModel.swift in Sources */,
 				CA57DB6B24DB95A10078852E /* CGPoint.swift in Sources */,
 				CA57DB6E24DB95A10078852E /* Int+Extension.swift in Sources */,
 				CA57DB6F24DB95A10078852E /* CameraViewController.swift in Sources */,
@@ -5116,7 +5159,9 @@
 				CA57DCFC24DB95A10078852E /* APIUIIndicator.swift in Sources */,
 				CA57DCFD24DB95A10078852E /* SubTableViewDataShowable.swift in Sources */,
 				CA57DCFE24DB95A10078852E /* KeyboardHandlerScrollView.swift in Sources */,
+				2424F6F7260B294E003B2543 /* TiktokItemCell.swift in Sources */,
 				CA57DD0024DB95A10078852E /* TextBoxView.swift in Sources */,
+				2424F70E260B2FC6003B2543 /* TiktokDetailVC.swift in Sources */,
 				CA57DD0624DB95A10078852E /* Colors.swift in Sources */,
 				CA57DD0724DB95A10078852E /* Extension+CGFloat.swift in Sources */,
 				CA57DD0824DB95A10078852E /* NotificationObject.swift in Sources */,
@@ -5292,6 +5337,7 @@
 				9796D47124C83AC500DDC2D1 /* UIApplication.swift in Sources */,
 				CA3F27E7248F2C1200030232 /* SelectionView.swift in Sources */,
 				CA3F27F9248F2C1200030232 /* AlbumsViewController.swift in Sources */,
+				2424F6F6260B294E003B2543 /* TiktokItemCell.swift in Sources */,
 				D11F9B4B23B1AF150003D496 /* SocketService.swift in Sources */,
 				D11F9B4C23B1AF150003D496 /* RadioCell.swift in Sources */,
 				9796D44724C83AC500DDC2D1 /* BlurView.swift in Sources */,
@@ -5480,6 +5526,7 @@
 				D11F9DD723B1AF150003D496 /* APIOperationProtocol.swift in Sources */,
 				D11F9DDE23B1AF150003D496 /* ReactionButtonConfig.swift in Sources */,
 				CA3F27BD248F2C1200030232 /* ImagePickerController+Assets.swift in Sources */,
+				2424F70D260B2FC6003B2543 /* TiktokDetailVC.swift in Sources */,
 				D11F9DE923B1AF150003D496 /* APIUIIndicator.swift in Sources */,
 				CA2E6351247D2A0900A20D9F /* SubTableViewDataShowable.swift in Sources */,
 				D11F9DEB23B1AF150003D496 /* KeyboardHandlerScrollView.swift in Sources */,
@@ -5553,6 +5600,7 @@
 				D11F9EE823B1AF150003D496 /* ImagesPageView.swift in Sources */,
 				D11F9EEA23B1AF150003D496 /* SocketIOService.swift in Sources */,
 				97805D1E2489E62E00898D30 /* BaseModel.swift in Sources */,
+				2424F6EB260B2938003B2543 /* TiktokModel.swift in Sources */,
 				CA3F27E5248F2C1200030232 /* CameraCollectionViewCell.swift in Sources */,
 				CA2E6377247D2A9300A20D9F /* ESTabBarItemContentView.swift in Sources */,
 				CA3F2801248F2C1200030232 /* ZoomTransitionDelegate.swift in Sources */,
@@ -5770,7 +5818,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = CUZZ5LX8A8;
 				ENABLE_BITCODE = NO;
@@ -5807,7 +5855,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = CUZZ5LX8A8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

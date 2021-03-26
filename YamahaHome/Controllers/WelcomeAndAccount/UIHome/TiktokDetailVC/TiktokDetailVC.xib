@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TiktokDetailVC" customModule="YH_Make_Waves" customModuleProvider="target">
+            <connections>
+                <outlet property="imageAvatar" destination="BsQ-8U-PdV" id="Hgn-4H-aoP"/>
+                <outlet property="labelBudget" destination="rUk-O9-4b1" id="fHH-lP-Cjv"/>
+                <outlet property="labelContenType" destination="tJ3-LW-2Gs" id="DYS-ho-6bz"/>
+                <outlet property="labelType" destination="7TO-CI-akY" id="SQJ-j0-Bap"/>
+                <outlet property="naviBar" destination="qPf-F1-NkM" id="xIO-FX-H59"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qPf-F1-NkM" customClass="CustomNaviBar" customModule="YH_Make_Waves" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="64" placeholder="YES" id="0T1-lV-xEr"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="M8O-Wm-7N3"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-8U-PdV">
+                    <rect key="frame" x="167" y="94" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2ON-t1-Z0E"/>
+                        <constraint firstAttribute="width" secondItem="BsQ-8U-PdV" secondAttribute="height" multiplier="1:1" id="zRg-fI-wk0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrument name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-CI-akY">
+                    <rect key="frame" x="15" y="194" width="399" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ3-LW-2Gs">
+                    <rect key="frame" x="15" y="223" width="399" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instrument details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFU-6p-OIN">
+                    <rect key="frame" x="15" y="257.5" width="399" height="19"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUk-O9-4b1">
+                    <rect key="frame" x="15" y="286.5" width="399" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qPf-F1-NkM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0eX-V8-1Lx"/>
+                <constraint firstItem="BsQ-8U-PdV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1B7-JB-qcA"/>
+                <constraint firstItem="qPf-F1-NkM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1aW-Fc-E72"/>
+                <constraint firstItem="UFU-6p-OIN" firstAttribute="top" secondItem="tJ3-LW-2Gs" secondAttribute="bottom" constant="15" id="215-vd-C36"/>
+                <constraint firstItem="BsQ-8U-PdV" firstAttribute="top" secondItem="qPf-F1-NkM" secondAttribute="bottom" constant="30" id="8AW-O3-pGB"/>
+                <constraint firstItem="7TO-CI-akY" firstAttribute="top" secondItem="BsQ-8U-PdV" secondAttribute="bottom" constant="20" id="C0T-zN-eZw"/>
+                <constraint firstAttribute="trailing" secondItem="qPf-F1-NkM" secondAttribute="trailing" id="IfD-pl-8o1"/>
+                <constraint firstItem="7TO-CI-akY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="K1A-yK-bei"/>
+                <constraint firstItem="rUk-O9-4b1" firstAttribute="top" secondItem="UFU-6p-OIN" secondAttribute="bottom" constant="10" id="Pwm-1h-H1v"/>
+                <constraint firstItem="UFU-6p-OIN" firstAttribute="leading" secondItem="tJ3-LW-2Gs" secondAttribute="leading" id="Q3M-KJ-Acv"/>
+                <constraint firstItem="tJ3-LW-2Gs" firstAttribute="leading" secondItem="7TO-CI-akY" secondAttribute="leading" id="b1A-Of-xnU"/>
+                <constraint firstItem="UFU-6p-OIN" firstAttribute="trailing" secondItem="tJ3-LW-2Gs" secondAttribute="trailing" id="dY9-jM-eeg"/>
+                <constraint firstItem="rUk-O9-4b1" firstAttribute="trailing" secondItem="UFU-6p-OIN" secondAttribute="trailing" id="esT-tq-Bfr"/>
+                <constraint firstItem="rUk-O9-4b1" firstAttribute="leading" secondItem="UFU-6p-OIN" secondAttribute="leading" id="jbM-Rm-Hgp"/>
+                <constraint firstAttribute="trailing" secondItem="7TO-CI-akY" secondAttribute="trailing" id="mm1-pQ-lR2"/>
+                <constraint firstItem="tJ3-LW-2Gs" firstAttribute="top" secondItem="7TO-CI-akY" secondAttribute="bottom" constant="10" id="uTM-rH-u1h"/>
+                <constraint firstItem="tJ3-LW-2Gs" firstAttribute="trailing" secondItem="7TO-CI-akY" secondAttribute="trailing" id="w7U-TK-uhV"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="106"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
